@@ -6,7 +6,7 @@ temp = open("tags.txt").read().split(",")
 for i in temp:
 	tags.append(i.strip())
 
-while(len(rand_nums)<4):
+while(len(rand_tags)<4):
 	rand_tags.add(random.randint(0,len(tags)-1))
 
 images = dict()
