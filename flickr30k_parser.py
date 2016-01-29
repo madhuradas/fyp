@@ -48,8 +48,9 @@ def parse_objects():
 	"""
 	objects = {}
 	count = 0
-	res = os.popen("grep -E -oh '#[\\-#A-Za-z0-9/ ]*' Flickr30kEntities/Sentences/*").read()
-	for line in res.split("\n"):
+	res = open("grep_output.txt").read().split("\n")
+	# res = os.popen("grep -E -oh '#[\\-#A-Za-z0-9/ ]*' Flickr30kEntities/Sentences/*").read()
+	for line in res:
 		count += 1
 		parts = line.split("/")
  		object_id = parts[0].strip("#")
@@ -74,5 +75,5 @@ def parse_objects():
 	f = open("objects.pickle", 'wb')
 	pickle.dump(objects, f, pickle.HIGHEST_PROTOCOL)
 	f.close()
-	
+	print objects["28600"]
 parse_objects() 
