@@ -47,8 +47,10 @@ def parse_objects():
 	To map object IDs to their descriptions
 	"""
 	objects = {}
+	count = 0
 	res = os.popen("grep -E -oh '#[\\-#A-Za-z0-9/ ]*' Flickr30kEntities/Sentences/*").read()
 	for line in res.split("\n"):
+		count += 1
 		parts = line.split("/")
  		object_id = parts[0].strip("#")
  		if len(object_id) > 2 and " " not in object_id:
@@ -64,12 +66,13 @@ def parse_objects():
 			else:
 				objects[object_id] = []
 				objects[object_id].append(caption)
+			print count
 			# objects[object_id] =(object_tag,caption)
 		else:
 			pass
 
 	f = open("objects.pickle", 'wb')
-	pickle.dump(save, f, pickle.HIGHEST_PROTOCOL)
+	pickle.dump(objects, f, pickle.HIGHEST_PROTOCOL)
 	f.close()
 	
 parse_objects() 
