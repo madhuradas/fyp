@@ -4,15 +4,13 @@ import xml.etree.ElementTree as ET
 global images,objects
 
 ## Remaining
-# Some XML files have multiple names for an object. Need to handle them.
 # Some object IDs are missing from the Sentences folder, so they are not mapped in the dataset dictionary..
-# What is scene 0 and 1?
 
 def parse_images():
 	"""
 	images = 
 	{
-		filename : { [(object_id,xmin,ymin,xmax,ymax),(object_id,xmin,ymin,xmax,ymax),...,(object_id,scene_id)] }
+		filename : { [[object_id,xmin,ymin,xmax,ymax],[object_id,xmin,ymin,xmax,ymax],...,[object_id,scene_id]] }
 	}
 
 	** Some images also have scenes(outdoor, parade, etc) which have scene ID instead of bboxes.
@@ -34,19 +32,25 @@ def parse_images():
 		
 		image_id = root[0].text.split(".")[0]
 		for child in root:
+			temp_count = 0
 			if child.tag == "object":
-				object_name = child[0].text
-				if len(child[1]) > 1:
-					l = []
-					xmin = child[1][0].text
-					ymin = child[1][1].text
-					xmax = child[1][2].text
-					ymax = child[1][3].text
-					content.append((object_name,xmin,ymin,xmax,ymax))
-				else:
-					scene = child[1].text
-					content.append((object_name,scene))
-				
+				for nested_child in child:
+					if nested_child.tag == "name":
+						temp_count += 1
+						object_name = child[0].text
+					elif nested_child.tag == "bndbox":
+						l = []
+						xmin = nested_child[0].text
+						ymin = nested_child[1].text
+						xmax = nested_child[2].text
+						ymax = nested_child[3].text
+						content.append((object_name,xmin,ymin,xmax,ymax))
+					elif nested_child.tag == "scene":
+						scene = nested_child.text
+						content.append((object_name,scene))
+		if temp_count > 1:	# Objects with more than one name
+			print item
+
 		images[image_id] = content
 
 	print len(images.keys())
@@ -101,19 +105,16 @@ def combine():
 		l = images[f]
 		new_l = []
 		for tup in l:
-			if len(tup) > 2:
-				temp = list(tup)
-				try:
-					temp[0] = objects[str(tup[0])]
-					images[f] = temp
-					new_l.append(temp)
-				except:
-					missing_objects.append(tup)
-			else:
-				new_l.append(tup)
+			temp = list(tup)
+			try:
+				temp[0] = objects[str(tup[0])]
+				images[f] = temp
+				new_l.append(temp)
+			except:
+				missing_objects.append(tup)
 		images[f] = new_l
+	print "Missing objects count: ",len(missing_objects)
 
-	print len(images.keys())
 	f = open("data/dataset.pickle", 'wb')
 	pickle.dump(images, f, pickle.HIGHEST_PROTOCOL)
 	f.close()
