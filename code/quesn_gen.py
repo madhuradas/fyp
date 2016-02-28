@@ -20,7 +20,7 @@ def gen_options(ans,others):
 
 
 img_set = set()
-d = pickle.load(open("dataset.pickle","r"))
+d = pickle.load(open("../data/dataset.pickle","r"))
 
 while(len(img_set)<5):
 	img_set.add(d.keys()[random.randrange(len(d.keys()))])
