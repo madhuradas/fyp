@@ -1,4 +1,4 @@
-data = eval(open("../data/image_wise.txt").read())
+data = eval(open("google_api/image_wise.txt").read())
 
 quesn_data = dict()
 for img in data.keys():
