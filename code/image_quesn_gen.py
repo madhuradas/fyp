@@ -12,5 +12,7 @@ for img in data.keys():
 		quesn_list.append("What type of "+" ".join(str(str(objs[2][2]).split(".")[0]).split("_"))+" is not shown in the image?" )
 	quesn_data[img] = quesn_list
 
+open('ques.txt','w').write(str(quesn_data))
+
 import pickle
 pickle.dump(quesn_data, open("image_wise_quesn.pickle",'wb'))
