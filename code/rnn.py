@@ -143,6 +143,7 @@ if __name__ == '__main__':
     seq_length = 25
     # prepare the training data
     p = 0
-    inputs = [char_to_ix[ch] for ch in data[p:p + seq_length] for p in range(len(data) - seq_length - 1)]
-    targets = [char_to_ix[ch] for ch in data[p + 1:p + seq_length + 1] for p in range(len(data) - seq_length - 1)]
+    inputs = [[char_to_ix[ch] for ch in data[p:p + seq_length]] for p in range(len(data) - seq_length - 1)]
+    targets = [[char_to_ix[ch] for ch in data[p + 1:p + seq_length + 1]] for p in range(len(data) - seq_length - 1)]
+    print inputs[0]
     rnn.train(inputs, targets, seq_length, 1000)
