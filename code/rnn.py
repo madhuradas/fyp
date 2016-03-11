@@ -66,7 +66,7 @@ class RNN(object):
     		dhnext = np.dot(self.Whh.T, dhraw)
   		for dparam in [dWxh, dWhh, dWhy, dbh, dby]:
     		np.clip(dparam, -5, 5, out=dparam) # clip to mitigate exploding gradients
-  		return loss, dWxh, dWhh, dWhy, dbh, dby, hs[len(inputs)-1]
+  		return loss, dWxh, dWhh, dWhy, dbh, dby, hs[len(X)-1]
 
 
 	def train(self, inputs, outputs, seq_len, num_epochs):
@@ -75,10 +75,10 @@ class RNN(object):
 		'''
 		mWxh, mWhh, mWhy = np.zeros_like(self.Wxh), np.zeros_like(self.Whh), np.zeros_like(self.Why)
 		mbh, mby = np.zeros_like(self.bh), np.zeros_like(self.by) # memory variables for Adagrad
-		smooth_loss = -np.log(1.0/self.input_dim) * seq_len # loss at iteration 0 (not sure if it should be self.input_dim)
+		smooth_loss = -np.log(1.0/self.output_dim) * seq_len # loss at iteration 0 (not sure if it should be self.input_dim)
 		for i in xrange(num_epochs):
 			hprev = np.zeros((hidden_size,1)) # reset RNN memory every epoch
-			for j in range(len(inputs)):
+			for j in xrange(len(inputs)):
 				# forward seq_length characters through the net and fetch gradient
 		  		loss, dWxh, dWhh, dWhy, dbh, dby, hprev = self._BPTT(inputs[j], targets[j], hprev)
 		  		smooth_loss = smooth_loss * 0.999 + loss * 0.001
@@ -90,12 +90,22 @@ class RNN(object):
 		  		self._minimize_loss(weights_derivatives_mem)
 		  		
 
-	def predict(self, X):
+	def predict(self, X, hprev=None):
 		'''
 		Given an input sequence, predict the output
 		X : input sequence
 		return output label/sequence
 		'''
+		if hprev is None:
+			hprev = np.zeros((self.hidden_size,1))
+		xs, hs, ys, ps = {}, {}, {}, {}
+		hs[-1] = np.copy(hprev)
+		for t in xrange(len(X)):
+			xs[t] = np.reshape(X[t], (self.input_size,1))
+			hs[t] = np.tanh(np.dot(self.Wxh, xs[t]) + np.dot(self.Whh, hs[t-1]) + self.bh) # hidden state
+			ys[t] = np.dot(self.Why, hs[t]) + self.by # unnormalized log probabilities
+			ps[t] = np.exp(ys[t]) / np.sum(np.exp(ys[t]))
+		return ps[len(X)-1], hs[len(X)-1]
 		pass
 
 	def evaluate(self, test_inputs, test_outputs):
@@ -119,4 +129,4 @@ class RNN(object):
 
 if __name__ == '__main__':
 	rnn = RNN()
-	pass
+	
