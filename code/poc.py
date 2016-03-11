@@ -2,9 +2,9 @@ from rnn import *
 import numpy as np
 import sys
 
-inputs_targets = eval(open('inputs_targets.txt').read())
-inputs = [i[0] for i in inputs_targets]
-targets = [i[1] for i in inputs_targets]
+inputs_targets = zip(*eval(open('inputs_targets.txt').read()))
+inputs = inputs_targets[0]
+targets = inputs_targets[1]
 
 # print inputs, targets
 class_to_ix = {cls: i for i, cls in enumerate(inputs)}
