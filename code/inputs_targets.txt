@@ -1,0 +1,1 @@
+[('building','What type of building is in the picture?'),('canine','Choose the canine shown in the image?'),('device','What device do you see here?'),('property','What type of property is not shown in the image?'),('sport','Which sport is being played in the image?')]
