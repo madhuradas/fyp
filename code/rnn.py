@@ -26,9 +26,9 @@ class RNN(object):
 		'''
 		Perform parameter update with Adagrad
 		'''
-  		for param, dparam, mem in weights_derivatives_mem:
-    		mem += dparam * dparam
-    		param += -self.learning_rate * dparam / np.sqrt(mem + 1e-8) # adagrad update
+  		for (param, dparam, mem) in weights_derivatives_mem:
+	    		mem += dparam * dparam
+	    		param += -self.learning_rate * dparam / np.sqrt(mem + 1e-8) # adagrad update
 
 	def _BPTT(self, X, y, hprev):
 		'''
@@ -69,7 +69,7 @@ class RNN(object):
   		return loss, dWxh, dWhh, dWhy, dbh, dby, hs[len(X)-1]
 
 
-	def train(self, inputs, outputs, seq_len, num_epochs):
+	def train(self, inputs, targets, seq_len, num_epochs):
 		'''
 		Invoke BPTT for num_epochs
 		'''
@@ -128,5 +128,18 @@ class RNN(object):
 
 
 if __name__ == '__main__':
-	rnn = RNN()
+	data = open('input.txt', 'r').read() # should be simple plain text file
+	chars = list(set(data))
+	data_size, vocab_size = len(data), len(chars)
+	print 'data has %d characters, %d unique.' % (data_size, vocab_size)
+	char_to_ix = { ch:i for i,ch in enumerate(chars) }
+	ix_to_char = { i:ch for i,ch in enumerate(chars) }
+	rnn = RNN(vocab_size,vocab_size,100)
+	seq_length = 25
+	# prepare the training data
+	inputs = [char_to_ix[ch] for ch in data[p:p+seq_length] for p in range(len(data)-seq_length-1)]
+  	targets = [char_to_ix[ch] for ch in data[p+1:p+seq_length+1] for p in range(len(data)-seq_length-1)]
+	rnn.train(inputs,targets,seq_length,1000)
+
+
 	
