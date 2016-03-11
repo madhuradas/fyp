@@ -1,6 +1,11 @@
 import numpy as np
 import pickle
 
+def load(self, filename):
+        '''
+        Load model from file
+        '''
+        return pickle.load(open(filename))
 
 class RNN(object):
     def __init__(self, output_dim, input_dim, hidden_size, learning_rate=1e-1, hidden_layers=1):
@@ -104,7 +109,8 @@ class RNN(object):
         xs, hs, ys, ps = {}, {}, {}, {}
         hs[-1] = np.copy(hprev)
         for t in xrange(len(X)):
-            xs[t] = np.reshape(X[t], (self.input_size, 1))
+            xs[t] = np.zeros((self.input_dim, 1))  # encode in 1-of-k representation
+            xs[t][X[t]] = 1
             hs[t] = np.tanh(np.dot(self.Wxh, xs[t]) + np.dot(self.Whh, hs[t - 1]) + self.bh)  # hidden state
             ys[t] = np.dot(self.Why, hs[t]) + self.by  # unnormalized log probabilities
             ps[t] = np.exp(ys[t]) / np.sum(np.exp(ys[t]))
@@ -125,12 +131,6 @@ class RNN(object):
         pickle.dump(self, open(filename, 'wb'))
 
 
-    def load(self, filename):
-        '''
-        Load model from file
-        '''
-        return pickle.load(open(filename))
-
 
 if __name__ == '__main__':
     data = open('input.txt', 'r').read()  # should be simple plain text file
@@ -145,5 +145,12 @@ if __name__ == '__main__':
     p = 0
     inputs = [[char_to_ix[ch] for ch in data[p:p + seq_length]] for p in range(len(data) - seq_length - 1)]
     targets = [[char_to_ix[ch] for ch in data[p + 1:p + seq_length + 1]] for p in range(len(data) - seq_length - 1)]
-    print inputs[0]
+    # print inputs[0]
     rnn.train(inputs, targets, seq_length, 1000)
+    print 'Finished training'
+    rnn.save('char-rnn.p')
+    rnn = load('char-rnn.p')
+    test_input = [char_to_ix[ch] for ch in 'hey there']
+    probs = rnn.predict(test_input)[0][0][0:, ].tolist()  # gives list of probabilities
+    import pdb;pdb.set_trace()
+    print 'Prediction : ', chars.index(probs.index(max(probs)))
