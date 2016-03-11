@@ -1,7 +1,7 @@
 import numpy as np
 import pickle
 
-def load(self, filename):
+def load(filename):
         '''
         Load model from file
         '''
@@ -90,7 +90,7 @@ class RNN(object):
                 loss, dWxh, dWhh, dWhy, dbh, dby, hprev = self._BPTT(inputs[j], targets[j], hprev)
                 smooth_loss = smooth_loss * 0.999 + loss * 0.001
                 if i % 100 == 0:
-                    print 'iter %d, loss: %f' % (i, smooth_loss)  # print progress
+                    print 'epoch %d, loss: %f' % (i, smooth_loss)  # print progress
 
                 # minimize the loss by calling adagrad update
                 weights_derivatives_mem = zip([self.Wxh, self.Whh, self.Why, self.bh, self.by],
@@ -146,11 +146,11 @@ if __name__ == '__main__':
     inputs = [[char_to_ix[ch] for ch in data[p:p + seq_length]] for p in range(len(data) - seq_length - 1)]
     targets = [[char_to_ix[ch] for ch in data[p + 1:p + seq_length + 1]] for p in range(len(data) - seq_length - 1)]
     # print inputs[0]
-    rnn.train(inputs, targets, seq_length, 1000)
+    # rnn.train(inputs, targets, seq_length, 1000)
     print 'Finished training'
-    rnn.save('char-rnn.p')
+    # rnn.save('char-rnn.p')
     rnn = load('char-rnn.p')
-    test_input = [char_to_ix[ch] for ch in 'hey there']
-    probs = rnn.predict(test_input)[0][0][0:, ].tolist()  # gives list of probabilities
-    import pdb;pdb.set_trace()
-    print 'Prediction : ', chars.index(probs.index(max(probs)))
+    test_input = [char_to_ix[ch] for ch in 'hey there! ']
+    probs = rnn.predict(test_input)[0][0:,0].tolist()  # gives list of probabilities
+    # import pdb;pdb.set_trace()
+    print 'Prediction : ', chars[probs.index(max(probs))]
