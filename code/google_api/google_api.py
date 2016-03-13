@@ -25,9 +25,9 @@ def main():
 	service = build('vision', 'v1', http, discoveryServiceUrl=API_DISCOVERY_FILE)
 	count = 0
 	missed = 0
-	for img in os.listdir("../../../first_10"):
+	for img in os.listdir("../../../first_1000_mirflickr"):
 		count += 1  
-		with open("../../../first_10/"+img, 'rb') as image:
+		with open("../../../first_1000_mirflickr/"+img, 'rb') as image:
 			image_content = base64.b64encode(image.read())
 			service_request = service.images().annotate(
 			  body={
@@ -52,15 +52,16 @@ def main():
 					l = wn.synsets(tag['description'])
 					if len(l) > 0:
 						hy = l[0].hypernyms()
-						res.append((tag['description'],tag['score'],hy[0].name()))
-					else:
-						print "No hypernyms for :",img,tag['description']
+						if len(hy) > 0:
+							res.append((tag['description'],tag['score'],hy[0].name()))
+						else:
+							print "No hypernyms for :",img,tag['description']
 				d[str(img)] = res
 		print count   
 
 	print "Missed count:",str(missed)
-	open("image_wise.txt","w").write(str(d))
-	class_to_img(eval(open("image_wise.txt").read()))
+	open("image_wise_mirflickr.txt","w").write(str(d))
+	class_to_img(eval(open("image_wise_mirflickr.txt").read()))
 
 def class_to_img(d):
 	'''
@@ -80,7 +81,7 @@ def class_to_img(d):
 					res[val[2]][val[0]] = [k]
 			else:
 				res[val[2]] =  {val[0]:[k]}
-	open("class_wise.txt","w").write(str(res))
+	open("class_wise_mirflickr.txt","w").write(str(res))
 
 
 if __name__ == '__main__':
