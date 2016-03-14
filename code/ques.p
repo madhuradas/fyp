@@ -986,7 +986,7 @@ p476
 I0
 sS'total_train_time'
 p477
-F0.010344982147216797
+F0.009572029113769531
 sS'vector_size'
 p478
 I30
