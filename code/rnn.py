@@ -6,7 +6,7 @@ def load(filename):
         Load model from file
         '''
         return pickle.load(open(filename))
-c=0
+
 class RNN(object):
     def __init__(self, output_dim, input_dim, hidden_size, learning_rate=1e-1, hidden_layers=1):
         '''
@@ -36,7 +36,7 @@ class RNN(object):
             mem += dparam * dparam
             param += -self.learning_rate * dparam / np.sqrt(mem + 1e-8)  # adagrad update
 
-    def _BPTT(self, X, y, hprev, ind):
+    def BPTT(self, X, y, hprev, forward = False):
         '''
         X : training example
         y : the output label
@@ -49,39 +49,35 @@ class RNN(object):
         global c
         # forward pass
         # range creates a list in memory whereas xrange is a sequence object that evaluates lazily
-        for t in xrange(len(X)):
-            # import pdb;pdb.set_trace()
-            xs[t] = np.reshape(X[t],(self.input_dim,1)) #np.zeros((self.input_dim, 1))  # encode in 1-of-k representation
-            #xs[t][X[t]] = 1
-            hs[t] = np.tanh(np.dot(self.Wxh, xs[t]) + np.dot(self.Whh, hs[t - 1]) + self.bh)  # hidden state
-            ys[t] = np.dot(self.Why, hs[t]) + self.by  # unnormalized log probabilities for next chars
-            ps[t] = np.exp(ys[t]) / np.sum(np.exp(ys[t]))  # probabilities for next chars
-            #loss += -np.log(ps[t][y[t], 0])  # softmax (cross-entropy loss)
-            # c+=1
-            # print c
-            # import pdb;pdb.set_trace()
-            # if c == 31:
-            #     import pdb;pdb.set_trace()
-            loss += -np.log(ps[t][ind, 0]) # changed from char - rnn, ix_to_char used by karparthy
-            # backward pass: compute gradients going backwards
+        if (not forward):
+            for t in xrange(len(X)):
+                xs[t] = np.reshape(X[t],(self.input_dim,1)) #np.zeros((self.input_dim, 1))  # encode in 1-of-k representation
+                hs[t] = np.tanh(np.dot(self.Wxh, xs[t]) + np.dot(self.Whh, hs[t - 1]) + self.bh)  # hidden state
+                ys[t] = np.dot(self.Why, hs[t]) + self.by  # unnormalized log probabilities for next chars
+                ps[t] = np.exp(ys[t]) / np.sum(np.exp(ys[t]))  # probabilities for next chars
+                loss += -np.log(ps[t][y[t], 0])  # softmax (cross-entropy loss)
+                #loss += -np.log(ps[t][ind, 0]) # changed from char - rnn, ix_to_char used by karparthy
+            return hs[len(X)-1],ps[len(X) - 1]
+        else:
+        # backward pass: compute gradients going backwards
             dWxh, dWhh, dWhy = np.zeros_like(self.Wxh), np.zeros_like(self.Whh), np.zeros_like(self.Why)
             dbh, dby = np.zeros_like(self.bh), np.zeros_like(self.by)
             dhnext = np.zeros_like(hs[0])
-        for t in reversed(xrange(len(X))):
-            dy = np.copy(ps[t])
-            dy[ind] -= 1  # backprop into y, # changed from char - rnn, ix_to_char used by karparthy
-            dWhy += np.dot(dy, hs[t].T)
-            dby += dy
-            dh = np.dot(self.Why.T, dy) + dhnext  # backprop into h
-            dhraw = (1 - hs[t] * hs[t]) * dh  # backprop through tanh nonlinearity
-            dbh += dhraw
-            dWxh += np.dot(dhraw, xs[t].T)
+            for t in reversed(xrange(len(X))):
+                dy = np.copy(ps[t])
+                dy[y[t]] -= 1  # backprop into y, # changed from char - rnn, ix_to_char used by karparthy
+                dWhy += np.dot(dy, hs[t].T)
+                dby += dy
+                dh = np.dot(self.Why.T, dy) + dhnext  # backprop into h
+                dhraw = (1 - hs[t] * hs[t]) * dh  # backprop through tanh nonlinearity
+                dbh += dhraw
+                dWxh += np.dot(dhraw, xs[t].T)
 
-        dWhh += np.dot(dhraw, hs[t - 1].T)
-        dhnext = np.dot(self.Whh.T, dhraw)
-        for dparam in [dWxh, dWhh, dWhy, dbh, dby]:
-            np.clip(dparam, -5, 5, out=dparam)  # clip to mitigate exploding gradients
-        return loss, dWxh, dWhh, dWhy, dbh, dby, hs[len(X) - 1]
+            dWhh += np.dot(dhraw, hs[t - 1].T)
+            dhnext = np.dot(self.Whh.T, dhraw)
+            for dparam in [dWxh, dWhh, dWhy, dbh, dby]:
+                np.clip(dparam, -5, 5, out=dparam)  # clip to mitigate exploding gradients
+            return loss, dWxh, dWhh, dWhy, dbh, dby, hs[len(X) - 1]
 
 
     def train(self, inputs, targets, num_epochs):
@@ -95,7 +91,7 @@ class RNN(object):
             hprev = np.zeros((self.hidden_size, 1))  # reset RNN memory every epoch
             for j in xrange(len(inputs)):
                 # forward seq_length characters through the net and fetch gradient
-                loss, dWxh, dWhh, dWhy, dbh, dby, hprev = self._BPTT(inputs[j], targets[j], hprev, j%self.input_dim)
+                loss, dWxh, dWhh, dWhy, dbh, dby, hprev = self._BPTT(inputs[j], targets[j], hprev)
                 smooth_loss = smooth_loss * 0.999 + loss * 0.001
                 print 'epoch %d, loss: %f' % (i, smooth_loss)  # print progress
 
