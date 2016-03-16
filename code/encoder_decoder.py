@@ -1,5 +1,6 @@
 from rnn import *
 
+
 class encoder_decoder(object):
     def __init__(self, enc_output_dim, enc_input_dim, enc_hidden_size, dec_output_dim, dec_input_dim, dec_hidden_size):
         '''
@@ -30,20 +31,23 @@ class encoder_decoder(object):
             1.0 / self.decoder.output_dim) * self.decoder.input_dim  # loss at iteration 0 (not sure if it should be self.input_dim)
         enc_smooth_loss = -np.log(1.0 / self.encoder.output_dim) * self.encoder.input_dim
         for i in xrange(num_epochs):
-            hprev = np.zeros((self.hidden_size, 1))  # reset RNN memory every epoch
+            hprev = np.zeros((self.encoder.hidden_size, 1))  # reset RNN memory every epoch
             for j in xrange(len(inputs)):
                 # Encoder forward pass
-                enc_hprev, enc_ps = self.encoder.BPTT(inputs[j], first_word_to_ix[targets[j].split(' ')[0]], hprev, True)
+                enc_xs, enc_hs, enc_ps, enc_loss = self.encoder.BPTT([inputs[j]], [first_word_to_ix[targets[j].split(' ')[0]]], hprev, xs=None, hs=None, ps=None, forward=True)
                 # smooth_loss = smooth_loss * 0.999 + loss * 0.001
 
                 # Decoder Forward pass
-                dec_hprev, dec_ps = self.decoder.BPTT([model_q[word] for word in targets[j].split(' ')[:-2]],
-                                                      [vocab_to_ix[word] for word in targets[j].split(' ')[1:]], enc_hprev,
-                                                      True)
-                # Decoder Back pass
+		try:
+                	dec_xs, dec_hs, dec_ps, dec_loss = self.decoder.BPTT([model_q[word] for word in targets[j].split(' ')[:-2]],
+                                                      [vocab_to_ix[word] for word in targets[j].split(' ')[1:]], enc_hs[len(inputs[j])-1], xs=None, hs=None, ps=None,
+                                                      forward=True)
+		except:
+			pdb.set_trace()
+		# Decoder Back pass
                 dec_loss, dec_dWxh, dec_dWhh, dec_dWhy, dec_dbh, dec_dby, dec_hprev = self.decoder.BPTT(
                     [model_q[word] for word in targets[j].split(' ')[:-2]],
-                    [vocab_to_ix[word] for word in targets[j].split(' ')[1:]], dec_hprev)
+                    [vocab_to_ix[word] for word in targets[j].split(' ')[1:]], dec_hs[len([model_q[word] for word in targets[j].split(' ')[:-2]])-1], xs=dec_xs, hs=dec_hs, ps=dec_ps, forward=False)
 
                 # minimize the loss for deocder
                 dec_weights_derivatives_mem = zip(
@@ -54,12 +58,12 @@ class encoder_decoder(object):
                 print 'epoch %d, DECODER loss: %f' % (i, dec_smooth_loss)  # print progress
 
                 # Encoder Back pass
-                enc_loss, enc_dWxh, enc_dWhh, enc_dWhy, enc_dbh, enc_dby, enc_hprev = self.encoder.BPTT(inputs[j],
-                                                                                                        first_word_to_ix[
+                enc_loss, enc_dWxh, enc_dWhh, enc_dWhy, enc_dbh, enc_dby, enc_hprev = self.encoder.BPTT([inputs[j]],
+                                                                                                        [first_word_to_ix[
                                                                                                             targets[
                                                                                                                 j].split(
-                                                                                                                ' ')[0]],
-                                                                                                        enc_hprev)
+                                                                                                                ' ')[0]]],
+                                                                                                        enc_hs[len(inputs[j])-1], xs=enc_xs, hs=enc_hs, ps=enc_ps, forward=False)
 
                 # minimize the loss for deocder
                 enc_weights_derivatives_mem = zip(

@@ -11,7 +11,7 @@ ix_to_vocab = pickle.load(open('ix_to_vocab.p'))
 model_q = pickle.load(open('ques.p'))
 
 
-encoder_decoder = encoder_decoder(len(first_word_to_ix.keys()), 30, 100, len(vocab_to_ix.keys()), 30, 100)
-encoder_decoder.train(inputs, targets, vocab_to_ix, first_word_to_ix, model_q)
+enc_dec = encoder_decoder(len(first_word_to_ix.keys()), 30, 100, len(vocab_to_ix.keys()), 30, 100)
+enc_dec.train(inputs, targets, 10, vocab_to_ix, first_word_to_ix, model_q)
 
-encoder_decoder.save('trained.p')
+enc_dec.save('trained.p')

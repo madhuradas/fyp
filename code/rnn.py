@@ -1,5 +1,6 @@
 import numpy as np
 import pickle
+import pdb
 
 def load(filename):
         '''
@@ -36,20 +37,22 @@ class RNN(object):
             mem += dparam * dparam
             param += -self.learning_rate * dparam / np.sqrt(mem + 1e-8)  # adagrad update
 
-    def BPTT(self, X, y, hprev, forward = False):
+    def BPTT(self, X, y, hprev, xs=None, hs=None, ps=None, forward=False):
         '''
         X : training example
         y : the output label
         hprev : Hx1 array of initial hidden state
         returns the loss, gradients on model parameters, and last hidden state
         '''
-        xs, hs, ys, ps = {}, {}, {}, {}
-        hs[-1] = np.copy(hprev)
-        loss = 0
-        global c
+        #xs, hs, ys, ps = {}, {}, {}, {}
+        #hs[-1] = np.copy(hprev)
+        #loss = 0
         # forward pass
         # range creates a list in memory whereas xrange is a sequence object that evaluates lazily
-        if (not forward):
+        if forward:
+	    xs, hs, ys, ps = {}, {}, {}, {}
+	    hs[-1] = np.copy(hprev)
+	    loss = 0
             for t in xrange(len(X)):
                 xs[t] = np.reshape(X[t],(self.input_dim,1)) #np.zeros((self.input_dim, 1))  # encode in 1-of-k representation
                 hs[t] = np.tanh(np.dot(self.Wxh, xs[t]) + np.dot(self.Whh, hs[t - 1]) + self.bh)  # hidden state
@@ -57,7 +60,7 @@ class RNN(object):
                 ps[t] = np.exp(ys[t]) / np.sum(np.exp(ys[t]))  # probabilities for next chars
                 loss += -np.log(ps[t][y[t], 0])  # softmax (cross-entropy loss)
                 #loss += -np.log(ps[t][ind, 0]) # changed from char - rnn, ix_to_char used by karparthy
-            return hs[len(X)-1],ps[len(X) - 1]
+            return xs, hs, ps, loss
         else:
         # backward pass: compute gradients going backwards
             dWxh, dWhh, dWhy = np.zeros_like(self.Wxh), np.zeros_like(self.Whh), np.zeros_like(self.Why)
