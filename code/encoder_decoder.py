@@ -39,9 +39,7 @@ class encoder_decoder(object):
 
                 # Decoder Forward pass
 		try:
-                	dec_xs, dec_hs, dec_ps, dec_loss = self.decoder.BPTT([model_q[word] for word in targets[j].split(' ')[:-2]],
-                                                      [vocab_to_ix[word] for word in targets[j].split(' ')[1:]], enc_hs[len(inputs[j])-1], xs=None, hs=None, ps=None,
-                                                      forward=True)
+                	dec_xs, dec_hs, dec_ps, dec_loss = self.decoder.BPTT([model_q[word] for word in targets[j].split(' ')[:-2]], [vocab_to_ix[word] for word in targets[j].split(' ')[1:]], enc_hs[len(inputs[j])-1], xs=None, hs=None, ps=None, forward=True)
 		except:
 			pdb.set_trace()
 		# Decoder Back pass
@@ -58,12 +56,7 @@ class encoder_decoder(object):
                 print 'epoch %d, DECODER loss: %f' % (i, dec_smooth_loss)  # print progress
 
                 # Encoder Back pass
-                enc_loss, enc_dWxh, enc_dWhh, enc_dWhy, enc_dbh, enc_dby, enc_hprev = self.encoder.BPTT([inputs[j]],
-                                                                                                        [first_word_to_ix[
-                                                                                                            targets[
-                                                                                                                j].split(
-                                                                                                                ' ')[0]]],
-                                                                                                        enc_hs[len(inputs[j])-1], xs=enc_xs, hs=enc_hs, ps=enc_ps, forward=False)
+                enc_loss, enc_dWxh, enc_dWhh, enc_dWhy, enc_dbh, enc_dby, enc_hprev = self.encoder.BPTT([inputs[j]], [first_word_to_ix[targets[j].split(' ')[0]]], enc_hs[len(inputs[j])-1], xs=enc_xs, hs=enc_hs, ps=enc_ps, forward=False)
 
                 # minimize the loss for deocder
                 enc_weights_derivatives_mem = zip(
