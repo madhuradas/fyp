@@ -37,7 +37,7 @@ class RNN(object):
             mem += dparam * dparam
             param += -self.learning_rate * dparam / np.sqrt(mem + 1e-8)  # adagrad update
 
-    def BPTT(self, X, y, hprev, xs=None, hs=None, ps=None, forward=False):
+    def BPTT(self, X, y, hprev, xs=None, hs=None, ps=None, loss=None, forward=False):
         '''
         X : training example
         y : the output label
@@ -81,27 +81,6 @@ class RNN(object):
             for dparam in [dWxh, dWhh, dWhy, dbh, dby]:
                 np.clip(dparam, -5, 5, out=dparam)  # clip to mitigate exploding gradients
             return loss, dWxh, dWhh, dWhy, dbh, dby, hs[len(X) - 1]
-
-
-    def train(self, inputs, targets, num_epochs):
-        '''
-        Invoke BPTT for num_epochs
-        '''
-        mWxh, mWhh, mWhy = np.zeros_like(self.Wxh), np.zeros_like(self.Whh), np.zeros_like(self.Why)
-        mbh, mby = np.zeros_like(self.bh), np.zeros_like(self.by)  # memory variables for Adagrad
-        smooth_loss = -np.log(1.0 / self.output_dim) * self.input_dim # loss at iteration 0 (not sure if it should be self.input_dim)
-        for i in xrange(num_epochs):
-            hprev = np.zeros((self.hidden_size, 1))  # reset RNN memory every epoch
-            for j in xrange(len(inputs)):
-                # forward seq_length characters through the net and fetch gradient
-                loss, dWxh, dWhh, dWhy, dbh, dby, hprev = self._BPTT(inputs[j], targets[j], hprev)
-                smooth_loss = smooth_loss * 0.999 + loss * 0.001
-                print 'epoch %d, loss: %f' % (i, smooth_loss)  # print progress
-
-                # minimize the loss by calling adagrad update
-                weights_derivatives_mem = zip([self.Wxh, self.Whh, self.Why, self.bh, self.by],
-                                              [dWxh, dWhh, dWhy, dbh, dby], [mWxh, mWhh, mWhy, mbh, mby])
-                self._minimize_loss(weights_derivatives_mem)
 
 
     def predict(self, X, hprev=None):
