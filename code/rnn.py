@@ -2,7 +2,7 @@ import numpy as np
 import pickle
 import pdb
 
-def load(filename):
+def load_rnn(filename):
         '''
         Load model from file
         '''
@@ -98,6 +98,7 @@ class RNN(object):
             hs[t] = np.tanh(np.dot(self.Wxh, xs[t]) + np.dot(self.Whh, hs[t - 1]) + self.bh)  # hidden state
             ys[t] = np.dot(self.Why, hs[t]) + self.by  # unnormalized log probabilities
             ps[t] = np.exp(ys[t]) / np.sum(np.exp(ys[t]))
+       # pdb.set_trace()
         return ps[len(X) - 1], hs[len(X) - 1]
 
 

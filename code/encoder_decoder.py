@@ -45,8 +45,8 @@ class encoder_decoder(object):
 
 		# Decoder Back pass
                 dec_loss, dec_dWxh, dec_dWhh, dec_dWhy, dec_dbh, dec_dby, dec_hprev = self.decoder.BPTT(
-                    [model_q[word] for word in targets[j].split(' ')[:-2]],
-                    [vocab_to_ix[word] for word in targets[j].split(' ')[1:]], dec_hs[len([model_q[word] for word in targets[j].split(' ')[:-2]])-1], xs=dec_xs, hs=dec_hs, ps=dec_ps, loss=dec_loss, forward=False)
+                    [model_q[word] for word in targets[j].split(' ')[:-1]],
+                    [vocab_to_ix[word] for word in targets[j].split(' ')[1:]], dec_hs[len([model_q[word] for word in targets[j].split(' ')[:-1]])-1], xs=dec_xs, hs=dec_hs, ps=dec_ps, loss=dec_loss, forward=False)
 
                 # minimize the loss for decoder
                 dec_weights_derivatives_mem = zip(
@@ -68,20 +68,27 @@ class encoder_decoder(object):
                 print 'epoch %d, ENCODER loss: %f' % (i, enc_smooth_loss)  # print progress
 
 
-    def predict_question(self, X, ix_to_first_word):
+    def predict_question(self, X, ix_to_first_word, ix_to_vocab, model):
         '''
         Given an input sequence, predict the output
         X : input sequence
         return output label/sequence
         '''
         ps, hs = self.encoder.predict(X)
-        word = ix_to_first_word[ps.values().index(max(ps.values()))]
-        model = pickle.load(open('ques.p'))
+        ques = ''
+        word = ix_to_first_word[ps.tolist().index(max(ps))]
+        #print word, " ",
+		#model = pickle.load(open('ques.p'))
         while (word != '?'):
-            print word, " ",
-            ps, hs = self.decoder.predict(model[word], hs)
-            word = ix_to_first_word[ps.values().index(max(ps.values()))]
-        print word, "\n"
+            #print word, " ",
+            ques += word + ' '
+            #pdb.set_trace()
+            ps, hs = self.decoder.predict([model[word]], hs)
+            word = ix_to_vocab[ps.tolist().index(max(ps))]
+        #print word, "\n"
+        ques += word
+        #print ques
+        return ques
 
     def save(self,filename):
         '''
