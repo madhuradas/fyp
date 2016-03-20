@@ -4,7 +4,8 @@ model_cls = pickle.load(open('class.p'))
 
 inputs = []
 targets = []
-d = eval(open('ques.txt').read())
+#d = eval(open('ques.txt').read())
+d = eval(open('new_questions/image_wise_quesn.txt').read())
 ques = open('q.txt').read().split(";")
 ques_vocab = set()
 first_words = set()
