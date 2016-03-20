@@ -25,9 +25,9 @@ def main():
 	service = build('vision', 'v1', http, discoveryServiceUrl=API_DISCOVERY_FILE)
 	count = 0
 	missed = 0
-	for img in os.listdir("../../../first_1000_mirflickr"):
+	for img in os.listdir("../../../second_1000"):
 		count += 1  
-		with open("../../../first_1000_mirflickr/"+img, 'rb') as image:
+		with open("../../../second_1000/"+img, 'rb') as image:
 			image_content = base64.b64encode(image.read())
 			service_request = service.images().annotate(
 			  body={
@@ -60,8 +60,8 @@ def main():
 		print count   
 
 	print "Missed count:",str(missed)
-	open("image_wise_mirflickr.txt","w").write(str(d))
-	class_to_img(eval(open("image_wise_mirflickr.txt").read()))
+	open("image_wise_flickr_second.txt","w").write(str(d))
+	class_to_img(eval(open("image_wise_flickr_second.txt").read()))
 
 def class_to_img(d):
 	'''
@@ -81,7 +81,7 @@ def class_to_img(d):
 					res[val[2]][val[0]] = [k]
 			else:
 				res[val[2]] =  {val[0]:[k]}
-	open("class_wise_mirflickr.txt","w").write(str(res))
+	open("class_wise_flickr.txt_second","w").write(str(res))
 
 
 if __name__ == '__main__':
