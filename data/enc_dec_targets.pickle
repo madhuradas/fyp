@@ -3,25 +3,25 @@ S'What type of ceremony is present in the image ?'
 p1
 aS'Select the group represented by the image ?'
 p2
-aS'Choose the type of motor vehicle present in the image ?'
+aS'What type of motor vehicle is present in the image ?'
 p3
-aS'Which conveyance is shown in the image ?'
+aS'Select the conveyance represented by the image ?'
 p4
 aS'What type of diversion is present in the image ?'
 p5
 aS'Select the geological formation represented by the image ?'
 p6
-aS'Choose the type of facility present in the image ?'
+aS'What type of facility is present in the image ?'
 p7
-aS'Which plastic art is shown in the image ?'
+aS'Select the plastic art represented by the image ?'
 p8
 aS'What type of consumer goods is present in the image ?'
 p9
 aS'Select the achromatic color represented by the image ?'
 p10
-aS'Choose the type of way present in the image ?'
+aS'What type of way is present in the image ?'
 p11
-aS'Which thoroughfare is shown in the image ?'
+aS'Select the thoroughfare represented by the image ?'
 p12
 aS'What type of instrumentality is present in the image ?'
 p13
@@ -31,2257 +31,2103 @@ aS'What type of life science is present in the image ?'
 p15
 aS'Select the nutriment represented by the image ?'
 p16
-aS'Choose the type of consumer goods present in the image ?'
-p17
-aS'Which achromatic color is shown in the image ?'
-p18
+ag9
+ag10
 aS'What type of causal agent is present in the image ?'
-p19
+p17
 aS'Select the diversion represented by the image ?'
-p20
-ag19
+p18
+ag17
 aS'Select the area represented by the image ?'
-p21
+p19
 ag5
 aS'Select the field game represented by the image ?'
-p22
-ag17
-aS'Which causal agent is shown in the image ?'
-p23
+p20
+ag9
+aS'Select the causal agent represented by the image ?'
+p21
 aS'What type of wheeled vehicle is present in the image ?'
-p24
+p22
 aS'Select the way represented by the image ?'
-p25
+p23
 ag11
-aS'Which adult is shown in the image ?'
-p26
-aS'What type of musician is present in the image ?'
-p27
-aS'Select the stringed instrument represented by the image ?'
-p28
-aS'Choose the type of diversion present in the image ?'
-p29
-aS'Which sport is shown in the image ?'
-p30
-aS'Choose the type of causal agent present in the image ?'
-p31
-aS'Which group is shown in the image ?'
-p32
-aS'What type of path is present in the image ?'
-p33
-aS'Select the walk represented by the image ?'
-p34
-aS'What type of food is present in the image ?'
-p35
-aS'Select the woody plant represented by the image ?'
-p36
-ag19
-ag20
-ag19
 aS'Select the adult represented by the image ?'
-p37
-aS'Choose the type of adult present in the image ?'
-p38
-aS'Which hair is shown in the image ?'
-p39
+p24
+aS'What type of musician is present in the image ?'
+p25
+aS'Select the stringed instrument represented by the image ?'
+p26
+ag5
+aS'Select the sport represented by the image ?'
+p27
+ag17
+ag2
+aS'What type of path is present in the image ?'
+p28
+aS'Select the walk represented by the image ?'
+p29
+aS'What type of food is present in the image ?'
+p30
+aS'Select the woody plant represented by the image ?'
+p31
+ag17
+ag18
+ag17
+ag24
+aS'What type of adult is present in the image ?'
+p32
+aS'Select the hair represented by the image ?'
+p33
 aS'What type of chromatic color is present in the image ?'
-p40
+p34
 aS'Select the body of water represented by the image ?'
-p41
+p35
 ag11
 ag12
-ag40
+ag34
 aS'Select the gramineous plant represented by the image ?'
-p42
-aS'Choose the type of contestant present in the image ?'
-p43
-aS'Which diversion is shown in the image ?'
-p44
+p36
+aS'What type of contestant is present in the image ?'
+p37
+ag18
 aS'What type of spectacles is present in the image ?'
-p45
+p38
 aS'Select the optical instrument represented by the image ?'
-p46
-aS'Choose the type of artifact present in the image ?'
-p47
-aS'Which furnishing is shown in the image ?'
-p48
+p39
+aS'What type of artifact is present in the image ?'
+p40
+aS'Select the furnishing represented by the image ?'
+p41
 aS'What type of municipality is present in the image ?'
-p49
+p42
 aS'Select the chromatic color represented by the image ?'
-p50
-aS'Choose the type of chromatic color present in the image ?'
-p51
-aS'Which representation is shown in the image ?'
-p52
+p43
+ag34
+aS'Select the representation represented by the image ?'
+p44
 aS'What type of unit is present in the image ?'
-p53
+p45
 aS'Select the occupational group represented by the image ?'
-p54
-aS'Choose the type of creating from raw materials present in the image ?'
-p55
-aS'Which hoop is shown in the image ?'
-p56
+p46
+aS'What type of creating from raw materials is present in the image ?'
+p47
+aS'Select the hoop represented by the image ?'
+p48
 aS'What type of leisure is present in the image ?'
-p57
-aS'Select the causal agent represented by the image ?'
-p58
-aS'Choose the type of traveler present in the image ?'
-p59
-aS'Which city district is shown in the image ?'
-p60
+p49
+ag21
+aS'What type of traveler is present in the image ?'
+p50
+aS'Select the city district represented by the image ?'
+p51
 aS'What type of conveyance is present in the image ?'
-p61
-aS'Choose the type of juvenile present in the image ?'
-p62
-aS'What type of way is present in the image ?'
-p63
+p52
+aS'What type of juvenile is present in the image ?'
+p53
+ag11
 aS'Select the street represented by the image ?'
-p64
-aS'Choose the type of show present in the image ?'
-p65
-aS'Which creation is shown in the image ?'
-p66
+p54
+aS'What type of show is present in the image ?'
+p55
+aS'Select the creation represented by the image ?'
+p56
 ag13
 aS'Select the motor vehicle represented by the image ?'
-p67
-ag51
-aS'Which objection is shown in the image ?'
-p68
-ag24
-ag25
-ag29
+p57
+ag34
+aS'Select the objection represented by the image ?'
+p58
+ag22
 ag23
 ag5
-aS'Choose the type of product present in the image ?'
-p69
+ag21
+ag5
+aS'What type of product is present in the image ?'
+p59
 aS'What type of animal is present in the image ?'
-p70
+p60
 aS'Select the canine represented by the image ?'
-p71
-aS'Choose the type of performer present in the image ?'
-p72
-ag23
-ag19
-ag37
-ag31
-aS'Which place of worship is shown in the image ?'
-p73
-aS'What type of activity is present in the image ?'
-p74
-ag14
-aS'Choose the type of precipitation present in the image ?'
-p75
-aS'Which season is shown in the image ?'
-p76
-aS'What type of clothing is present in the image ?'
-p77
-aS'Select the seat represented by the image ?'
-p78
-ag43
-ag44
-aS'What type of workplace is present in the image ?'
-p79
-aS'Select the juvenile represented by the image ?'
-p80
-aS'Choose the type of animal present in the image ?'
-p81
-aS'Which vertebrate is shown in the image ?'
-p82
-ag40
-aS'Choose the type of wheeled vehicle present in the image ?'
-p83
-ag30
-aS'What type of juvenile is present in the image ?'
-p84
-ag31
-aS'Which collection is shown in the image ?'
-p85
-aS'What type of group is present in the image ?'
-p86
-aS'Select the plant organ represented by the image ?'
-p87
+p61
+aS'What type of performer is present in the image ?'
+p62
+ag21
 ag17
-aS'Which way is shown in the image ?'
-p88
-ag19
-ag20
-aS'Choose the type of geological formation present in the image ?'
-p89
-aS'Which body of water is shown in the image ?'
-p90
-ag70
-ag71
-aS'Choose the type of objection present in the image ?'
-p91
-aS'Which gathering is shown in the image ?'
-p92
+ag24
+ag17
+aS'Select the place of worship represented by the image ?'
+p63
+aS'What type of activity is present in the image ?'
+p64
+ag14
+aS'What type of precipitation is present in the image ?'
+p65
+aS'Select the season represented by the image ?'
+p66
+aS'What type of clothing is present in the image ?'
+p67
+aS'Select the seat represented by the image ?'
+p68
+ag37
+ag18
+aS'What type of workplace is present in the image ?'
+p69
+aS'Select the juvenile represented by the image ?'
+p70
+ag60
+aS'Select the vertebrate represented by the image ?'
+p71
+ag34
+ag22
+ag27
+ag53
+ag17
+aS'Select the collection represented by the image ?'
+p72
+aS'What type of group is present in the image ?'
+p73
+aS'Select the plant organ represented by the image ?'
+p74
+ag9
+ag23
+ag17
+ag18
+aS'What type of geological formation is present in the image ?'
+p75
+ag35
+ag60
 ag61
+aS'What type of objection is present in the image ?'
+p76
+aS'Select the gathering represented by the image ?'
+p77
+ag52
 aS'Select the building represented by the image ?'
-p93
-ag29
+p78
+ag5
 ag5
 aS'Select the contestant represented by the image ?'
-p94
-ag29
-aS'Which contestant is shown in the image ?'
-p95
+p79
+ag5
+ag79
 aS'What type of device is present in the image ?'
-p96
+p80
 aS'Select the gambling house represented by the image ?'
-p97
-aS'Choose the type of municipality present in the image ?'
-p98
-aS'Which municipality is shown in the image ?'
-p99
-ag70
-ag71
-ag29
-aS'Which skating is shown in the image ?'
-p100
-aS'What type of gathering is present in the image ?'
-p101
-ag58
-ag31
-aS'Which occupational group is shown in the image ?'
-p102
-ag70
-aS'Select the organism represented by the image ?'
-p103
-ag81
-aS'Which canine is shown in the image ?'
-p104
-aS"What type of woman's clothing is present in the image ?"
-p105
-aS'Select the appearance represented by the image ?'
-p106
-ag17
-ag66
-aS'What type of time period is present in the image ?'
-p107
-aS'Select the conveyance represented by the image ?'
-p108
-aS'Choose the type of dramatic composition present in the image ?'
-p109
-aS'Which cloth covering is shown in the image ?'
-p110
-ag40
-aS'Select the representation represented by the image ?'
-p111
-aS'Choose the type of nutriment present in the image ?'
-p112
-aS'Which meal is shown in the image ?'
-p113
-aS'What type of show is present in the image ?'
-p114
-aS'Select the creation represented by the image ?'
-p115
-aS'Choose the type of commercial enterprise present in the image ?'
-p116
-aS'Which path is shown in the image ?'
-p117
-aS'What type of motor vehicle is present in the image ?'
-p118
-ag108
-aS'Choose the type of container present in the image ?'
-p119
-aS'Which substance is shown in the image ?'
-p120
-aS'What type of body of water is present in the image ?'
-p121
-ag41
-ag51
-aS'Which angiosperm is shown in the image ?'
-p122
-aS'What type of vertebrate is present in the image ?'
-p123
-ag103
-aS'Choose the type of happening present in the image ?'
-p124
-aS'Which process is shown in the image ?'
-p125
-aS'What type of body covering is present in the image ?'
-p126
-aS'Select the hair represented by the image ?'
-p127
-ag81
-ag104
-aS'What type of nutriment is present in the image ?'
-p128
-aS'Select the substance represented by the image ?'
-p129
-aS'Choose the type of body covering present in the image ?'
-p130
-ag39
-ag5
-aS'Select the undertaking represented by the image ?'
-p131
-ag29
-ag100
-aS'Choose the type of conveyance present in the image ?'
-p132
-aS'Which consideration is shown in the image ?'
-p133
-aS'What type of court game is present in the image ?'
-p134
-ag20
-ag132
-aS'Which wagon is shown in the image ?'
-p135
-aS'What type of performer is present in the image ?'
-p136
-ag20
-ag31
-aS'Which life science is shown in the image ?'
-p137
-ag19
-ag80
-ag40
-ag41
-ag86
-ag80
-aS'Choose the type of leisure present in the image ?'
-p138
-ag90
-ag40
-aS'Select the festival represented by the image ?'
-p139
-ag3
-ag4
-ag136
-ag98
-ag40
-aS'Select the pictorial representation represented by the image ?'
-p140
-ag51
-aS'Which location is shown in the image ?'
-p141
-ag5
-ag94
-ag43
-ag44
-aS'What type of art is present in the image ?'
-p142
-ag50
-ag75
-ag76
-aS'What type of masonry is present in the image ?'
-p143
-aS'Select the paving represented by the image ?'
-p144
-ag29
-aS'Which game is shown in the image ?'
-p145
-ag13
-ag2
-ag81
-ag121
-aS'Select the leisure represented by the image ?'
-p146
-ag11
-aS'Which paving is shown in the image ?'
-p147
-ag114
-ag20
-ag31
-aS'Which nutriment is shown in the image ?'
-p148
+p81
+ag42
+ag14
+ag60
 ag61
-ag31
-ag84
-aS'Select the dramatic composition represented by the image ?'
-p149
 ag5
 aS'Select the skating represented by the image ?'
-p150
-ag29
-ag5
-aS'Select the water sport represented by the image ?'
-p151
-aS'Choose the type of structure present in the image ?'
-p152
-ag44
-ag57
-ag41
-aS'Choose the type of gathering present in the image ?'
-p153
-ag88
-ag84
-ag58
-ag51
-ag88
-ag105
-aS'Select the participant represented by the image ?'
-p154
-ag29
-aS'What type of track and field is present in the image ?'
-p155
-ag20
-ag43
-ag44
-aS'What type of water sport is present in the image ?'
-p156
-aS'Select the piece of cloth represented by the image ?'
-p157
-ag31
-aS'Which horseman is shown in the image ?'
-p158
-ag9
-aS'Select the body covering represented by the image ?'
-p159
-aS'Choose the type of group present in the image ?'
-p160
-ag70
-ag71
-aS'Choose the type of sport present in the image ?'
-p161
-aS'Which wheeled vehicle is shown in the image ?'
-p162
-ag5
-ag151
-aS'Choose the type of binary compound present in the image ?'
-p163
-aS'Which water travel is shown in the image ?'
-p164
-ag77
-aS'Select the angiosperm represented by the image ?'
-p165
-aS'Choose the type of yard present in the image ?'
-p166
-ag70
-ag71
-aS'Choose the type of stream present in the image ?'
-p167
-aS'Which woody plant is shown in the image ?'
-p168
-ag29
-aS'Which equine is shown in the image ?'
-p169
-aS'Choose the type of creation present in the image ?'
-p170
-aS'Which performer is shown in the image ?'
-p171
-aS'What type of outdoor game is present in the image ?'
-p172
-aS'Select the field represented by the image ?'
-p173
-ag43
-ag44
-ag61
-aS'Select the force represented by the image ?'
-p174
-ag81
-ag104
-ag107
-aS'Select the spectacles represented by the image ?'
-p175
-ag81
-ag104
-aS'What type of course is present in the image ?'
-p176
-aS'Select the block represented by the image ?'
-p177
-aS'Choose the type of body of water present in the image ?'
-p178
-aS'Which geological formation is shown in the image ?'
-p179
-ag19
-aS'Select the army unit represented by the image ?'
-p180
-ag130
-ag23
-ag121
-ag6
-ag119
-ag120
-ag5
-ag58
-ag31
-ag32
-ag49
-ag93
-aS'Choose the type of criminal present in the image ?'
-p181
-aS'Which consumer goods is shown in the image ?'
-p182
-aS'What type of dramatic composition is present in the image ?'
-p183
-ag80
-ag178
-aS'Which chromatic color is shown in the image ?'
-p184
-aS'What type of boat is present in the image ?'
-p185
-aS'Select the water travel represented by the image ?'
-p186
-ag153
-ag99
-ag5
-aS'Select the court game represented by the image ?'
-p187
-ag153
-ag32
-ag19
-aS'Select the thoroughfare represented by the image ?'
-p188
-ag43
-ag44
-ag5
-ag149
-aS'Choose the type of unit present in the image ?'
-p189
-ag44
-aS'What type of auditory communication is present in the image ?'
-p190
-aS'Select the performer represented by the image ?'
-p191
-aS'Choose the type of clothing present in the image ?'
-p192
-ag60
-ag9
-ag175
-ag62
-ag5
-ag20
-aS'Choose the type of life science present in the image ?'
-p193
-aS'Which basic cognitive process is shown in the image ?'
-p194
-aS'What type of creation is present in the image ?'
-p195
-ag20
-ag31
-ag26
-aS'What type of building is present in the image ?'
-p196
-aS'Select the room represented by the image ?'
-p197
-aS'Choose the type of area present in the image ?'
-p198
-aS'Which outbuilding is shown in the image ?'
-p199
-ag13
-aS'Select the artifact represented by the image ?'
-p200
-ag29
-aS'Which unit is shown in the image ?'
-p201
-aS'What type of creating from raw materials is present in the image ?'
-p202
-aS'Select the system represented by the image ?'
-p203
-ag81
-ag104
-aS'What type of doctor is present in the image ?'
-p204
+p82
+aS'What type of gathering is present in the image ?'
+p83
 ag21
-ag29
-ag95
-ag9
-ag50
-ag160
-ag90
-aS'What type of actinic radiation is present in the image ?'
-p205
-aS'Select the framework represented by the image ?'
-p206
-ag29
-aS'Which procurator is shown in the image ?'
-p207
-aS'What type of artifact is present in the image ?'
-p208
-aS'Select the machine represented by the image ?'
-p209
-ag29
-ag201
-ag121
-aS'Select the soil represented by the image ?'
-p210
-ag43
-ag184
-ag70
-ag103
-ag81
-ag104
-ag107
-aS'Select the show represented by the image ?'
-p211
-ag81
-ag104
-ag107
-aS'Choose the type of time period present in the image ?'
-p212
-ag171
-aS'What type of even-toed ungulate is present in the image ?'
-p213
-aS'Select the scenery represented by the image ?'
-p214
-aS'Choose the type of environment present in the image ?'
-p215
-aS'Which ridge is shown in the image ?'
-p216
-ag195
-aS'Select the outdoor sport represented by the image ?'
-p217
-ag178
-ag19
-ag54
-ag29
-ag138
-ag76
-aS'Choose the type of field present in the image ?'
-p218
-aS'Which dirtiness is shown in the image ?'
-p219
-ag5
-aS'Select the board represented by the image ?'
-p220
-ag29
-ag86
-ag80
-ag31
-aS'Which dramatic composition is shown in the image ?'
-p221
-ag101
-aS'What type of precipitation is present in the image ?'
-p222
-aS'Select the clothing represented by the image ?'
-p223
-aS'Choose the type of quality present in the image ?'
-p224
-ag90
-ag61
-aS'Select the wagon represented by the image ?'
-p225
-aS'What type of attire is present in the image ?'
-p226
-ag61
-ag209
-ag178
-ag4
-ag5
-ag58
-ag31
-aS'Which doctor is shown in the image ?'
-p227
-aS'What type of transmission is present in the image ?'
-p228
-aS'Select the collection represented by the image ?'
-p229
 ag17
-ag23
-ag5
-aS'Select the track and field represented by the image ?'
-p230
-ag163
-ag4
-ag5
-ag31
-aS'Which juvenile is shown in the image ?'
-p231
-ag70
-ag71
-aS'Choose the type of newlywed present in the image ?'
-p232
-ag23
-aS'What type of dish is present in the image ?'
-p233
-aS'Select the food represented by the image ?'
-p234
-ag31
-ag26
-ag9
-ag58
-ag47
-aS'Which system is shown in the image ?'
-p235
-ag5
-ag149
-aS'Choose the type of art present in the image ?'
-p236
-ag66
-aS'What type of canopy is present in the image ?'
-p237
-aS'Select the precipitation represented by the image ?'
-p238
-ag29
-aS'Which brome is shown in the image ?'
-p239
-ag70
-ag71
-ag101
-aS'Select the time period represented by the image ?'
-p240
-ag29
-aS'Which court game is shown in the image ?'
-p241
-ag5
-ag94
-ag132
-ag70
-aS'Select the woman represented by the image ?'
-p242
-ag81
-ag104
-ag84
-ag58
-aS'Choose the type of representation present in the image ?'
-p243
-ag23
-ag101
-ag240
-ag170
-ag88
-ag123
-aS'Select the animal represented by the image ?'
-p244
-ag132
-aS'Which tractor is shown in the image ?'
-p245
-ag5
-ag94
-ag109
-aS'Which animal is shown in the image ?'
-p246
-ag70
-ag71
-ag163
-ag90
-ag208
-aS'Select the commercial enterprise represented by the image ?'
-p247
-ag138
-aS'Which water sport is shown in the image ?'
-p248
-ag5
-aS'Select the contest represented by the image ?'
-p249
-ag17
-ag88
-ag9
-ag146
-ag38
-ag32
-ag123
-ag103
-ag138
-ag90
-ag84
-ag149
-ag160
-aS'Which tract is shown in the image ?'
-p250
-aS'What type of binary compound is present in the image ?'
-p251
-ag80
-ag98
-ag99
-aS'What type of gully is present in the image ?'
-p252
-ag131
-ag153
-aS'Which show is shown in the image ?'
-p253
-aS'What type of pachyderm is present in the image ?'
-p254
-aS'Select the vertebrate represented by the image ?'
-p255
-ag29
-ag246
-ag70
-aS'Select the sport represented by the image ?'
-p256
-ag31
-ag26
-ag205
-aS'Select the illumination represented by the image ?'
-p257
-ag13
-ag108
-ag101
-aS'Select the gathering represented by the image ?'
-p258
-ag29
-ag13
-ag50
-ag218
-ag246
-ag208
-ag14
-aS'Choose the type of illumination present in the image ?'
-p259
-ag141
-ag63
-ag188
-ag116
-aS'What type of season is present in the image ?'
-p260
-ag36
-ag178
-ag179
-ag70
-ag71
-ag31
-ag231
-ag195
-ag20
-aS'Choose the type of person present in the image ?'
-p261
-aS'Which participant is shown in the image ?'
-p262
-aS'Choose the type of facial expression present in the image ?'
-p263
-aS'Which appearance is shown in the image ?'
-p264
-aS'What type of achromatic color is present in the image ?'
-p265
-ag159
-ag29
-ag95
-ag40
-ag20
-ag29
-aS'Which cricketer is shown in the image ?'
-p266
-ag49
-aS'Select the activity represented by the image ?'
-p267
-ag59
-ag63
-aS'Select the instrumentality represented by the image ?'
-p268
-ag153
-ag32
-ag49
-ag267
-ag11
-ag12
-aS'Choose the type of keyboard instrument present in the image ?'
-p269
-aS'Which device is shown in the image ?'
-p270
-ag70
-ag255
-aS'Choose the type of propulsion present in the image ?'
-p271
-ag101
-aS'Choose the type of dirtiness present in the image ?'
-p272
-ag5
-ag226
-ag240
-ag65
-ag66
-ag27
-aS'Select the musician represented by the image ?'
-p273
-ag31
-aS'Which buying is shown in the image ?'
-p274
-ag107
-ag210
-ag160
-aS'Which soil is shown in the image ?'
-p275
-ag70
-ag103
-ag51
-ag133
-aS'What type of adult is present in the image ?'
-p276
-ag2
-ag29
-ag241
-ag5
-aS'Select the court represented by the image ?'
-p277
-ag81
-ag104
-ag121
-ag146
-ag98
-ag120
-ag9
-ag106
-aS'Choose the type of partition present in the image ?'
-p278
-ag70
-ag71
-ag212
-aS'Which illumination is shown in the image ?'
-p279
-aS'What type of float is present in the image ?'
-p280
-ag31
-ag102
-ag123
-ag103
-ag178
-ag179
-ag13
-aS'Select the structure represented by the image ?'
-p281
-ag29
-aS'Which boat is shown in the image ?'
-p282
+ag46
+ag60
+aS'Select the organism represented by the image ?'
+p84
+ag60
 ag61
-ag256
-ag62
-aS'Which child is shown in the image ?'
-p283
-ag70
-ag87
-ag51
+aS"What type of woman's clothing is present in the image ?"
+p85
+aS'Select the appearance represented by the image ?'
+p86
+ag9
+ag56
+aS'What type of time period is present in the image ?'
+p87
+ag4
+aS'What type of dramatic composition is present in the image ?'
+p88
+aS'Select the cloth covering represented by the image ?'
+p89
+ag34
 ag44
-ag107
-ag188
-ag31
-aS'Which graphic art is shown in the image ?'
-p284
-ag61
-aS'Select the craft represented by the image ?'
-p285
-aS'Choose the type of building complex present in the image ?'
-p286
-ag168
-ag19
-ag54
-ag112
-aS'What type of gramineous plant is present in the image ?'
-p287
-ag36
-ag38
-ag246
-aS'What type of biome is present in the image ?'
-p288
-ag214
-aS'Choose the type of woody plant present in the image ?'
-p289
-aS'Which division is shown in the image ?'
-p290
-aS'What type of motorboat is present in the image ?'
-p291
-ag25
-ag132
-aS'Which motor vehicle is shown in the image ?'
-p292
-aS'Choose the type of substance present in the image ?'
-p293
-ag62
-ag221
-ag222
+aS'What type of nutriment is present in the image ?'
+p90
+aS'Select the meal represented by the image ?'
+p91
+ag55
+ag56
+aS'What type of commercial enterprise is present in the image ?'
+p92
 aS'Select the path represented by the image ?'
-p294
-ag29
-ag44
-ag1
-ag229
-ag31
-aS'What type of property is present in the image ?'
-p295
-aS'Select the furnishing represented by the image ?'
-p296
-ag119
-ag148
-ag190
-ag191
-ag261
-ag23
-ag5
-ag150
-ag178
-aS'Which leisure is shown in the image ?'
-p297
-ag84
-ag149
-ag189
-ag44
-aS'What type of buying is present in the image ?'
-p298
-aS'Select the enterprise represented by the image ?'
-p299
-ag160
-ag44
-aS'What type of partition is present in the image ?'
-p300
-aS'Select the creating from raw materials represented by the image ?'
-p301
-aS'Choose the type of disfavor present in the image ?'
-p302
-aS'Which vegetation is shown in the image ?'
-p303
-ag70
-ag71
-ag178
-aS'What type of drawing is present in the image ?'
-p304
-ag80
-ag160
-ag121
-ag6
-ag29
-aS'Which field game is shown in the image ?'
-p305
-ag86
-ag132
-aS'Which car is shown in the image ?'
-p306
-ag19
-ag80
-aS'Choose the type of organism present in the image ?'
-p307
-ag82
-aS'What type of trouser is present in the image ?'
-p308
-ag2
-ag112
-aS'Which optical instrument is shown in the image ?'
-p309
-ag19
-ag244
-ag166
-ag221
-ag57
-aS'Select the visual property represented by the image ?'
-p310
-aS'Choose the type of achromatic color present in the image ?'
-p311
-ag23
-aS'What type of sculpture is present in the image ?'
-p312
-ag115
-ag47
-aS'Which plant material is shown in the image ?'
-p313
-ag9
-ag58
-aS'Choose the type of graphic art present in the image ?'
-p314
-ag52
-aS'What type of water travel is present in the image ?'
-p315
-ag41
-ag29
-aS'Which mobilization is shown in the image ?'
-p316
-ag5
-ag223
-ag43
-aS'Which lineman is shown in the image ?'
-p317
-ag222
-aS'Select the season represented by the image ?'
-p318
-ag138
-ag250
-aS'What type of vacation is present in the image ?'
-p319
-aS'Select the linear unit represented by the image ?'
-p320
-ag29
-ag23
-ag5
-ag256
-aS'Choose the type of plastic art present in the image ?'
-p321
-ag246
-aS'What type of education is present in the image ?'
-p322
-aS'What type of free-reed instrument is present in the image ?'
-p323
-ag161
-ag44
-ag84
-ag31
-ag52
-ag9
-ag111
-ag31
-aS'Which container is shown in the image ?'
-p324
-ag19
-ag223
-aS'What type of building complex is present in the image ?'
-p325
-ag234
-ag196
-ag178
-ag4
-ag40
-ag108
-aS'Choose the type of instrumentality present in the image ?'
-p326
-ag4
-ag24
-ag256
-aS'Choose the type of sculpture present in the image ?'
-p327
-ag44
-ag86
-ag240
-aS'Choose the type of physical phenomenon present in the image ?'
-p328
-aS'Which structure is shown in the image ?'
-p329
-ag5
-ag115
-ag65
-ag44
-ag121
-ag146
-ag160
-aS'What type of furnishing is present in the image ?'
-p330
-ag78
-ag17
-aS'Which body covering is shown in the image ?'
-p331
-ag19
-ag244
-ag123
-aS'Select the cattle represented by the image ?'
-p332
-aS'What type of collection is present in the image ?'
-p333
-ag25
-ag138
-ag179
-ag123
-ag103
-ag11
-ag12
-ag9
-ag50
-ag251
-ag186
-ag5
-ag51
-ag88
-aS'What type of undertaking is present in the image ?'
-p334
-aS'Select the rise represented by the image ?'
-p335
-ag31
-ag246
-ag70
-ag103
-ag31
-ag231
-ag49
-ag50
-ag31
-ag184
-ag315
-ag80
-ag121
-ag6
-ag40
-ag58
-ag29
-aS'Which horizontal surface is shown in the image ?'
-p336
-ag121
-ag146
-ag132
-ag292
-ag226
-ag240
-aS'Choose the type of horizontal surface present in the image ?'
-p337
-ag336
-ag5
-aS'Select the locomotion represented by the image ?'
-p338
-ag326
-aS'Which painting is shown in the image ?'
-p339
-ag101
-ag58
-ag29
-ag30
-ag126
-ag127
-ag40
-ag200
-ag40
-ag36
-ag138
-aS'What type of representation is present in the image ?'
-p340
-ag25
-aS'Choose the type of furnishing present in the image ?'
-p341
-ag5
-ag94
-ag98
-ag88
-aS'What type of carnivore is present in the image ?'
-p342
-ag255
-ag29
-aS'Which rise is shown in the image ?'
-p343
-ag61
-ag268
-ag132
-aS'Which hose is shown in the image ?'
-p344
-ag222
-ag318
-ag11
-ag32
-aS'What type of enterprise is present in the image ?'
-p345
-ag17
-aS'Which spectacles is shown in the image ?'
-p346
-ag195
-aS'Select the actinic radiation represented by the image ?'
-p347
-ag38
-ag44
-ag183
-ag20
-ag31
-ag32
-aS'What type of public square is present in the image ?'
-p348
-ag138
-ag331
-ag114
-ag115
-aS'Choose the type of oscine present in the image ?'
-p349
-ag82
-ag61
-aS'Select the vessel represented by the image ?'
-p350
-ag132
-ag292
-ag86
-ag80
-ag17
-ag88
-ag35
-ag129
-aS'What type of plastic art is present in the image ?'
-p351
-ag2
-aS'Choose the type of vertebrate present in the image ?'
-p352
-ag246
-ag63
-ag20
-ag81
-aS'Which person is shown in the image ?'
-p353
-aS'What type of atmosphere is present in the image ?'
-p354
-ag310
-aS'Choose the type of food present in the image ?'
-p355
-aS'Which building complex is shown in the image ?'
-p356
-aS'What type of area is present in the image ?'
-p357
-ag29
-ag329
-ag128
-ag80
-ag355
-ag99
-ag70
-ag71
-ag43
-ag44
-ag5
-ag58
-ag17
-ag264
-ag128
-ag2
-ag29
-aS'Which cattle is shown in the image ?'
-p358
-ag5
-ag131
-ag109
-ag231
-ag5
-aS'Select the lineman represented by the image ?'
-p359
-ag62
-ag23
-ag57
-ag51
-ag136
-ag31
-ag26
-ag112
-ag32
-ag13
-ag310
-aS'Choose the type of gymnastic apparatus present in the image ?'
-p360
-ag23
-aS'What type of spot is present in the image ?'
-p361
-ag93
-aS'Choose the type of machine present in the image ?'
-p362
-ag70
-ag71
-ag178
-ag231
-aS'What type of plant organ is present in the image ?'
-p363
-ag165
-aS'Choose the type of chemoreceptor present in the image ?'
-p364
-ag39
-aS'What type of building material is present in the image ?'
-p365
-aS'Select the protective covering represented by the image ?'
-p366
-ag51
-aS'Which wit is shown in the image ?'
-p367
-ag19
-ag212
-aS'Which custom is shown in the image ?'
-p368
-ag19
-ag80
-ag109
-aS'Which yard is shown in the image ?'
-p369
-ag101
-ag14
-aS'Choose the type of visual property present in the image ?'
-p370
-ag184
-ag121
-ag146
-ag29
-ag95
-ag86
-ag258
-ag38
-ag26
-ag19
-aS'Select the skilled worker represented by the image ?'
-p371
-ag17
-ag114
-aS'Choose the type of soil present in the image ?'
-p372
-aS'Choose the type of thoroughfare present in the image ?'
-p373
-ag121
-aS'Select the binary compound represented by the image ?'
-p374
-ag43
-ag88
-ag5
-aS'Select the transport represented by the image ?'
-p375
-ag212
-ag5
-ag94
-ag341
-ag63
-ag14
-aS'Choose the type of actinic radiation present in the image ?'
-p376
-ag279
-ag160
-ag57
-ag72
-aS'Which auditory communication is shown in the image ?'
-p377
-ag19
-aS'Select the religious represented by the image ?'
-p378
-ag83
-ag253
-ag31
-aS'Which broadcasting is shown in the image ?'
-p379
-ag109
-ag283
-ag53
-ag108
-ag98
-ag88
-ag84
-ag2
-ag81
-ag104
-aS'What type of system is present in the image ?'
-p380
-aS'Select the unit represented by the image ?'
-p381
-ag276
-ag2
-ag160
-ag148
-ag19
-ag20
-ag47
-ag40
-ag37
-ag31
-ag4
-ag121
-ag41
-ag321
-ag19
-ag37
+p93
 ag3
 ag4
+aS'What type of container is present in the image ?'
+p94
+aS'Select the substance represented by the image ?'
+p95
+aS'What type of body of water is present in the image ?'
+p96
+ag35
+ag34
+aS'Select the angiosperm represented by the image ?'
+p97
+aS'What type of vertebrate is present in the image ?'
+p98
 ag84
-ag58
-ag112
-ag32
-aS'Choose the type of water travel present in the image ?'
-p382
-ag30
-ag109
-aS'What type of field game is present in the image ?'
-p383
-ag20
-ag47
-aS'Which commercial enterprise is shown in the image ?'
-p384
-ag260
-ag31
-ag231
-ag40
-ag25
-ag81
-ag104
-ag40
-ag46
-ag29
-ag26
-ag40
-ag149
-ag11
-ag4
-ag57
-ag2
-ag17
-aS'Which stage dancing is shown in the image ?'
-p385
-aS'What type of vine is present in the image ?'
-p386
-ag20
-ag51
-ag8
-aS'What type of cattle is present in the image ?'
-p387
-aS'Select the traveler represented by the image ?'
-p388
-ag38
-aS'Which newlywed is shown in the image ?'
-p389
+aS'What type of happening is present in the image ?'
+p99
+aS'Select the process represented by the image ?'
+p100
+aS'What type of body covering is present in the image ?'
+p101
+ag33
+ag60
+ag61
+ag90
+ag95
+ag101
+ag33
 ag5
-ag240
-ag161
-ag44
-ag107
-ag258
-ag29
-ag201
-ag121
-ag350
-ag81
+aS'Select the undertaking represented by the image ?'
+p102
+ag5
+ag82
+ag52
+aS'Select the consideration represented by the image ?'
+p103
+aS'What type of court game is present in the image ?'
+p104
+ag18
+ag52
+aS'Select the wagon represented by the image ?'
+p105
+ag62
+ag18
+ag17
+aS'Select the life science represented by the image ?'
+p106
+ag17
+ag70
+ag34
+ag35
+ag73
+ag70
+ag49
+ag35
+ag34
+aS'Select the festival represented by the image ?'
+p107
+ag3
+ag4
+ag62
+ag42
+ag34
+aS'Select the pictorial representation represented by the image ?'
+p108
+ag34
+aS'Select the location represented by the image ?'
+p109
+ag5
+ag79
+ag37
+ag18
+aS'What type of art is present in the image ?'
+p110
+ag43
+ag65
+ag66
+aS'What type of masonry is present in the image ?'
+p111
+aS'Select the paving represented by the image ?'
+p112
+ag5
+aS'Select the game represented by the image ?'
+p113
+ag13
+ag2
+ag60
+ag96
+aS'Select the leisure represented by the image ?'
+p114
+ag11
+ag112
+ag55
+ag18
+ag17
+ag16
+ag52
+ag17
+ag53
+aS'Select the dramatic composition represented by the image ?'
+p115
+ag5
 ag82
 ag5
-aS'Select the promotion represented by the image ?'
-p390
-ag62
+ag5
+aS'Select the water sport represented by the image ?'
+p116
+aS'What type of structure is present in the image ?'
+p117
+ag18
+ag49
+ag35
+ag83
+ag23
+ag53
+ag21
+ag34
+ag23
+ag85
+aS'Select the participant represented by the image ?'
+p118
+ag5
+aS'What type of track and field is present in the image ?'
+p119
+ag18
+ag37
+ag18
+aS'What type of water sport is present in the image ?'
+p120
+aS'Select the piece of cloth represented by the image ?'
+p121
+ag17
+aS'Select the horseman represented by the image ?'
+p122
+ag9
+aS'Select the body covering represented by the image ?'
+p123
+ag73
+ag60
+ag61
+aS'What type of sport is present in the image ?'
+p124
+aS'Select the wheeled vehicle represented by the image ?'
+p125
+ag5
+ag116
+aS'What type of binary compound is present in the image ?'
+p126
+aS'Select the water travel represented by the image ?'
+p127
+ag67
+ag97
+aS'What type of yard is present in the image ?'
+p128
+ag60
+ag61
+aS'What type of stream is present in the image ?'
+p129
+ag31
+ag5
+aS'Select the equine represented by the image ?'
+p130
+aS'What type of creation is present in the image ?'
+p131
+aS'Select the performer represented by the image ?'
+p132
+aS'What type of outdoor game is present in the image ?'
+p133
+aS'Select the field represented by the image ?'
+p134
+ag37
+ag18
+ag52
+aS'Select the force represented by the image ?'
+p135
+ag60
+ag61
+ag87
+aS'Select the spectacles represented by the image ?'
+p136
+ag60
+ag61
+aS'What type of course is present in the image ?'
+p137
+aS'Select the block represented by the image ?'
+p138
+ag96
+ag6
+ag17
+aS'Select the army unit represented by the image ?'
+p139
+ag101
+ag21
+ag96
+ag6
+ag94
+ag95
+ag5
+ag21
+ag17
+ag2
+ag42
+ag78
+aS'What type of criminal is present in the image ?'
+p140
+aS'Select the consumer goods represented by the image ?'
+p141
+ag88
+ag70
+ag96
+ag43
+aS'What type of boat is present in the image ?'
+p142
+ag127
+ag83
+ag14
+ag5
+aS'Select the court game represented by the image ?'
+p143
+ag83
+ag2
+ag17
+ag12
+ag37
+ag18
+ag5
+ag115
+ag45
+ag18
+aS'What type of auditory communication is present in the image ?'
+p144
+ag132
+ag67
+ag51
+ag9
+ag136
+ag53
+ag5
+ag18
+ag15
+aS'Select the basic cognitive process represented by the image ?'
+p145
+ag131
+ag18
+ag17
+ag24
+aS'What type of building is present in the image ?'
+p146
+aS'Select the room represented by the image ?'
+p147
+aS'What type of area is present in the image ?'
+p148
+aS'Select the outbuilding represented by the image ?'
+p149
+ag13
+aS'Select the artifact represented by the image ?'
+p150
+ag5
+aS'Select the unit represented by the image ?'
+p151
+ag47
+aS'Select the system represented by the image ?'
+p152
+ag60
+ag61
+aS'What type of doctor is present in the image ?'
+p153
+ag19
+ag5
+ag79
+ag9
+ag43
+ag73
+ag35
+aS'What type of actinic radiation is present in the image ?'
+p154
+aS'Select the framework represented by the image ?'
+p155
+ag5
+aS'Select the procurator represented by the image ?'
+p156
+ag40
+aS'Select the machine represented by the image ?'
+p157
+ag5
+ag151
+ag96
+aS'Select the soil represented by the image ?'
+p158
+ag37
+ag43
+ag60
+ag84
+ag60
+ag61
+ag87
+aS'Select the show represented by the image ?'
+p159
+ag60
+ag61
+ag87
+ag87
+ag132
+aS'What type of even-toed ungulate is present in the image ?'
+p160
+aS'Select the scenery represented by the image ?'
+p161
+aS'What type of environment is present in the image ?'
+p162
+aS'Select the ridge represented by the image ?'
+p163
+ag131
+aS'Select the outdoor sport represented by the image ?'
+p164
+ag96
+ag17
+ag46
+ag5
+ag49
+ag66
+aS'What type of field is present in the image ?'
+p165
+aS'Select the dirtiness represented by the image ?'
+p166
+ag5
+aS'Select the board represented by the image ?'
+p167
+ag5
+ag73
+ag70
+ag17
+ag115
+ag83
+ag65
+aS'Select the clothing represented by the image ?'
+p168
+aS'What type of quality is present in the image ?'
+p169
+ag35
+ag52
+ag105
+aS'What type of attire is present in the image ?'
+p170
+ag52
+ag157
+ag96
+ag4
+ag5
+ag21
+ag17
+aS'Select the doctor represented by the image ?'
+p171
+aS'What type of transmission is present in the image ?'
+p172
+ag72
+ag9
+ag21
+ag5
+aS'Select the track and field represented by the image ?'
+p173
+ag126
+ag4
+ag5
+ag17
+ag70
+ag60
+ag61
+aS'What type of newlywed is present in the image ?'
+p174
+ag21
+aS'What type of dish is present in the image ?'
+p175
+aS'Select the food represented by the image ?'
+p176
+ag17
+ag24
+ag9
+ag21
+ag40
+ag152
+ag5
+ag115
+ag110
+ag56
+aS'What type of canopy is present in the image ?'
+p177
+aS'Select the precipitation represented by the image ?'
+p178
+ag5
+aS'Select the brome represented by the image ?'
+p179
+ag60
+ag61
+ag83
+aS'Select the time period represented by the image ?'
+p180
+ag5
+ag143
+ag5
+ag79
+ag52
+ag60
+aS'Select the woman represented by the image ?'
+p181
+ag60
+ag61
+ag53
+ag21
+aS'What type of representation is present in the image ?'
+p182
+ag21
+ag83
+ag180
+ag131
+ag23
+ag98
+aS'Select the animal represented by the image ?'
+p183
+ag52
+aS'Select the tractor represented by the image ?'
+p184
+ag5
+ag79
+ag88
+ag183
+ag60
+ag61
+ag126
+ag35
+ag40
+aS'Select the commercial enterprise represented by the image ?'
+p185
+ag49
+ag116
+ag5
+aS'Select the contest represented by the image ?'
+p186
+ag9
 ag23
 ag9
-aS'Select the attire represented by the image ?'
-p391
-ag31
-aS'Which motion is shown in the image ?'
-p392
-ag70
-ag71
-ag38
-ag130
-ag39
-ag51
-ag246
-ag142
+ag114
+ag32
+ag2
+ag98
+ag84
+ag49
+ag35
+ag53
 ag115
-aS'Choose the type of angiosperm present in the image ?'
-p393
-aS"Which woman's clothing is shown in the image ?"
-p394
-aS'What type of artwork is present in the image ?'
-p395
-aS'Select the ellipse represented by the image ?'
-p396
-ag212
+ag73
+aS'Select the tract represented by the image ?'
+p187
+ag126
+ag70
+ag42
+ag14
+aS'What type of gully is present in the image ?'
+p188
+ag102
+ag83
+ag159
+aS'What type of pachyderm is present in the image ?'
+p189
+ag71
+ag5
+ag183
+ag60
+ag27
+ag17
+ag24
+ag154
+aS'Select the illumination represented by the image ?'
+p190
+ag13
+ag4
+ag83
+ag77
+ag5
+ag13
+ag43
+ag165
+ag183
 ag40
-aS'Select the location represented by the image ?'
-p397
+ag14
+aS'What type of illumination is present in the image ?'
+p191
+ag109
+ag11
+ag12
+ag92
+aS'What type of season is present in the image ?'
+p192
+ag31
+ag96
+ag6
+ag60
+ag61
+ag17
+ag70
+ag131
+ag18
+aS'What type of person is present in the image ?'
+p193
+ag118
+aS'What type of facial expression is present in the image ?'
+p194
+ag86
+aS'What type of achromatic color is present in the image ?'
+p195
+ag123
+ag5
+ag79
+ag34
+ag18
+ag5
+aS'Select the cricketer represented by the image ?'
+p196
+ag42
+aS'Select the activity represented by the image ?'
+p197
+ag50
+ag11
+aS'Select the instrumentality represented by the image ?'
+p198
+ag83
+ag2
+ag42
+ag197
+ag11
+ag12
+aS'What type of keyboard instrument is present in the image ?'
+p199
+aS'Select the device represented by the image ?'
+p200
+ag60
+ag71
+aS'What type of propulsion is present in the image ?'
+p201
+ag83
+aS'What type of dirtiness is present in the image ?'
+p202
+ag5
+ag170
+ag180
+ag55
+ag56
+ag25
+aS'Select the musician represented by the image ?'
+p203
+ag17
+aS'Select the buying represented by the image ?'
+p204
+ag87
+ag158
+ag73
+ag158
+ag60
+ag84
+ag34
+ag103
+ag32
+ag2
+ag5
+ag143
+ag5
+aS'Select the court represented by the image ?'
+p205
+ag60
+ag61
+ag96
+ag114
+ag42
+ag95
+ag9
+ag86
+aS'What type of partition is present in the image ?'
+p206
+ag60
+ag61
+ag87
+ag190
+aS'What type of float is present in the image ?'
+p207
+ag17
+ag46
+ag98
+ag84
+ag96
+ag6
+ag13
+aS'Select the structure represented by the image ?'
+p208
+ag5
+aS'Select the boat represented by the image ?'
+p209
+ag52
+ag27
+ag53
+aS'Select the child represented by the image ?'
+p210
+ag60
+ag74
+ag34
+ag18
+ag87
+ag12
+ag17
+aS'Select the graphic art represented by the image ?'
+p211
+ag52
+aS'Select the craft represented by the image ?'
+p212
+aS'What type of building complex is present in the image ?'
+p213
+ag31
+ag17
+ag46
+ag90
+aS'What type of gramineous plant is present in the image ?'
+p214
+ag31
+ag32
+ag183
+aS'What type of biome is present in the image ?'
+p215
+ag161
+aS'What type of woody plant is present in the image ?'
+p216
+aS'Select the division represented by the image ?'
+p217
+aS'What type of motorboat is present in the image ?'
+p218
+ag23
+ag52
+ag57
+aS'What type of substance is present in the image ?'
+p219
+ag53
+ag115
+ag65
+ag93
+ag5
+ag18
+ag1
+ag72
+ag17
+aS'What type of property is present in the image ?'
+p220
+ag41
+ag94
+ag16
+ag144
+ag132
+ag193
+ag21
+ag5
+ag82
+ag96
+ag114
+ag53
+ag115
+ag45
+ag18
+aS'What type of buying is present in the image ?'
+p221
+aS'Select the enterprise represented by the image ?'
+p222
+ag73
+ag18
+ag206
+aS'Select the creating from raw materials represented by the image ?'
+p223
+aS'What type of disfavor is present in the image ?'
+p224
+aS'Select the vegetation represented by the image ?'
+p225
+ag60
+ag61
+ag96
+aS'What type of drawing is present in the image ?'
+p226
+ag70
+ag73
+ag96
+ag6
+ag5
+ag20
+ag73
+ag52
+aS'Select the car represented by the image ?'
+p227
+ag17
+ag70
+aS'What type of organism is present in the image ?'
+p228
+ag71
+aS'What type of trouser is present in the image ?'
+p229
+ag2
+ag90
+ag39
+ag17
+ag183
+ag128
+ag115
+ag49
+aS'Select the visual property represented by the image ?'
+p230
+ag195
+ag21
+aS'What type of sculpture is present in the image ?'
+p231
+ag56
+ag40
+aS'Select the plant material represented by the image ?'
+p232
+ag9
+ag21
+aS'What type of graphic art is present in the image ?'
+p233
+ag44
+aS'What type of water travel is present in the image ?'
+p234
+ag35
+ag5
+aS'Select the mobilization represented by the image ?'
+p235
+ag5
+ag168
+ag37
+aS'Select the lineman represented by the image ?'
+p236
+ag65
+ag66
+ag49
+ag187
+aS'What type of vacation is present in the image ?'
+p237
+aS'Select the linear unit represented by the image ?'
+p238
+ag5
+ag21
+ag5
+ag27
+aS'What type of plastic art is present in the image ?'
+p239
+ag183
+aS'What type of education is present in the image ?'
+p240
+aS'What type of free-reed instrument is present in the image ?'
+p241
+ag124
+ag18
+ag53
+ag17
+ag44
+ag9
+ag44
+ag17
+aS'Select the container represented by the image ?'
+p242
+ag17
+ag168
+ag213
+ag176
+ag146
+ag96
+ag4
+ag34
+ag4
+ag13
+ag4
+ag22
+ag27
+ag231
+ag18
+ag73
+ag180
+aS'What type of physical phenomenon is present in the image ?'
+p243
+ag208
+ag5
+ag56
+ag55
+ag18
+ag96
+ag114
+ag73
+aS'What type of furnishing is present in the image ?'
+p244
+ag68
+ag9
+ag123
+ag17
+ag183
+ag98
+aS'Select the cattle represented by the image ?'
+p245
+aS'What type of collection is present in the image ?'
+p246
+ag23
+ag49
+ag6
+ag98
+ag84
+ag11
+ag12
+ag9
+ag43
+ag126
+ag127
+ag5
+ag34
+ag23
+aS'What type of undertaking is present in the image ?'
+p247
+aS'Select the rise represented by the image ?'
+p248
+ag17
+ag183
+ag60
+ag84
+ag17
+ag70
+ag42
+ag43
+ag17
+ag43
+ag234
+ag70
+ag96
+ag6
+ag34
+ag21
+ag5
+aS'Select the horizontal surface represented by the image ?'
+p249
+ag96
+ag114
+ag52
+ag57
+ag170
+ag180
+aS'What type of horizontal surface is present in the image ?'
+p250
+ag249
+ag5
+aS'Select the locomotion represented by the image ?'
+p251
+ag13
+aS'Select the painting represented by the image ?'
+p252
+ag83
+ag21
+ag5
+ag27
+ag101
+ag33
+ag34
+ag150
+ag34
+ag31
+ag49
+ag182
+ag23
+ag244
+ag5
+ag79
+ag42
+ag23
+aS'What type of carnivore is present in the image ?'
+p253
+ag71
+ag5
+ag248
+ag52
+ag198
+ag52
+aS'Select the hose represented by the image ?'
+p254
+ag65
+ag66
+ag11
+ag2
+aS'What type of enterprise is present in the image ?'
+p255
+ag9
+ag136
+ag131
+aS'Select the actinic radiation represented by the image ?'
+p256
+ag32
+ag18
+ag88
+ag18
+ag17
+ag2
+aS'What type of public square is present in the image ?'
+p257
+ag49
+ag123
+ag55
+ag56
+aS'What type of oscine is present in the image ?'
+p258
+ag71
+ag52
+aS'Select the vessel represented by the image ?'
+p259
+ag52
+ag57
+ag73
+ag70
+ag9
+ag23
+ag30
+ag95
+ag239
+ag2
+ag98
+ag183
+ag11
+ag18
+ag60
+aS'Select the person represented by the image ?'
+p260
+aS'What type of atmosphere is present in the image ?'
+p261
+ag230
+ag30
+aS'Select the building complex represented by the image ?'
+p262
+ag148
+ag5
+ag208
+ag90
+ag70
+ag30
+ag14
+ag60
+ag61
+ag37
+ag18
+ag5
+ag21
+ag9
+ag86
+ag90
+ag2
+ag5
+ag245
+ag5
+ag102
+ag88
+ag70
+ag5
+ag236
+ag53
+ag21
+ag49
+ag34
+ag62
+ag17
+ag24
+ag90
+ag2
+ag13
+ag230
+aS'What type of gymnastic apparatus is present in the image ?'
+p263
+ag21
+aS'What type of spot is present in the image ?'
+p264
+ag78
+aS'What type of machine is present in the image ?'
+p265
+ag60
+ag61
+ag96
+ag70
+aS'What type of plant organ is present in the image ?'
+p266
+ag97
+aS'What type of chemoreceptor is present in the image ?'
+p267
+ag33
+aS'What type of building material is present in the image ?'
+p268
+aS'Select the protective covering represented by the image ?'
+p269
+ag34
+aS'Select the wit represented by the image ?'
+p270
+ag17
+ag87
+aS'Select the custom represented by the image ?'
+p271
+ag17
+ag70
+ag88
+aS'Select the yard represented by the image ?'
+p272
+ag83
+ag14
+aS'What type of visual property is present in the image ?'
+p273
+ag43
+ag96
+ag114
+ag5
+ag79
+ag73
+ag77
+ag32
+ag24
+ag17
+aS'Select the skilled worker represented by the image ?'
+p274
+ag9
+ag55
+aS'What type of soil is present in the image ?'
+p275
+aS'What type of thoroughfare is present in the image ?'
+p276
+ag96
+aS'Select the binary compound represented by the image ?'
+p277
+ag37
+ag23
+ag5
+aS'Select the transport represented by the image ?'
+p278
+ag87
+ag5
+ag79
+ag244
+ag11
+ag14
+ag154
+ag190
+ag73
+ag49
+ag62
+aS'Select the auditory communication represented by the image ?'
+p279
+ag17
+aS'Select the religious represented by the image ?'
+p280
+ag22
+ag159
+ag17
+aS'Select the broadcasting represented by the image ?'
+p281
+ag88
+ag210
+ag45
+ag4
+ag42
+ag23
+ag53
+ag2
+ag60
+ag61
+aS'What type of system is present in the image ?'
+p282
+ag151
+ag32
+ag2
+ag73
+ag16
+ag17
+ag18
+ag40
+ag34
+ag24
+ag17
+ag4
+ag96
+ag35
+ag239
+ag17
+ag24
+ag3
+ag4
+ag53
+ag21
+ag90
+ag2
+ag234
+ag27
+ag88
+aS'What type of field game is present in the image ?'
+p283
+ag18
+ag40
+ag185
+ag192
+ag17
+ag70
+ag34
+ag23
+ag60
+ag61
+ag34
+ag39
+ag5
+ag24
+ag34
+ag115
+ag11
+ag4
+ag49
+ag2
+ag9
+aS'Select the stage dancing represented by the image ?'
+p284
+aS'What type of vine is present in the image ?'
+p285
+ag18
+ag34
+ag8
+aS'What type of cattle is present in the image ?'
+p286
+aS'Select the traveler represented by the image ?'
+p287
+ag32
+aS'Select the newlywed represented by the image ?'
+p288
+ag5
+ag180
+ag124
+ag18
+ag87
+ag77
+ag5
+ag151
+ag96
+ag259
+ag60
+ag71
+ag5
+aS'Select the promotion represented by the image ?'
+p289
+ag53
+ag21
+ag9
+aS'Select the attire represented by the image ?'
+p290
+ag17
+aS'Select the motion represented by the image ?'
+p291
+ag60
+ag61
+ag32
+ag101
+ag33
+ag34
+ag183
+ag110
+ag56
+aS'What type of angiosperm is present in the image ?'
+p292
+aS"Select the woman's clothing represented by the image ?"
+p293
+aS'What type of artwork is present in the image ?'
+p294
+aS'Select the ellipse represented by the image ?'
+p295
+ag87
+ag34
+ag109
 ag3
 ag4
 aS'What type of glass is present in the image ?'
-p398
-ag108
-ag29
-ag162
+p296
+ag4
+ag5
+ag125
 ag13
-ag41
-aS'Choose the type of natural elevation present in the image ?'
-p399
-ag297
-ag70
-ag71
-ag51
-ag184
+ag35
+aS'What type of natural elevation is present in the image ?'
+p297
+ag114
+ag60
+ag61
+ag34
+ag43
 aS'What type of festival is present in the image ?'
-p400
+p298
 aS'Select the art represented by the image ?'
-p401
-ag51
-ag90
-ag19
-ag108
-ag314
-ag384
+p299
+ag34
+ag35
+ag17
+ag4
+ag233
+ag185
 ag9
-ag50
-aS'Choose the type of climb present in the image ?'
-p402
-aS'Which precipitation is shown in the image ?'
-p403
-ag265
-ag374
-ag81
-ag104
-aS'What type of completion is present in the image ?'
-p404
-aS'Select the psychological feature represented by the image ?'
-p405
+ag43
+aS'What type of climb is present in the image ?'
+p300
 ag178
-ag179
-ag19
-ag94
-ag81
-ag82
-ag40
-ag50
-ag212
-aS'Which actinic radiation is shown in the image ?'
-p406
-ag251
+ag195
+ag277
+ag60
+ag61
+aS'What type of completion is present in the image ?'
+p301
+aS'Select the psychological feature represented by the image ?'
+p302
+ag96
+ag6
+ag17
+ag79
+ag60
+ag71
+ag34
+ag43
+ag87
+ag256
+ag126
 aS'Select the life represented by the image ?'
-p407
-ag31
-aS'Which traveler is shown in the image ?'
-p408
-ag163
-ag44
+p303
+ag17
+ag287
+ag126
+ag18
 ag13
 aS'Select the article represented by the image ?'
-p409
-ag153
-ag32
-ag19
-aS'Select the procurator represented by the image ?'
-p410
-ag29
-ag90
-ag119
-ag120
-ag123
-ag103
-ag65
-ag92
-ag101
-ag25
-ag31
-ag231
-ag123
-ag103
-aS'Choose the type of formation present in the image ?'
-p411
+p304
+ag83
+ag2
+ag17
+ag156
+ag5
+ag35
+ag94
+ag95
+ag98
+ag84
+ag55
+ag77
+ag83
+ag23
+ag17
 ag70
-ag71
-ag31
-ag207
+ag98
+ag84
+aS'What type of formation is present in the image ?'
+p305
+ag60
 ag61
-aS'Select the wheeled vehicle represented by the image ?'
-p412
-ag29
-aS'Which board is shown in the image ?'
-p413
-ag70
-ag255
+ag17
+ag156
+ag52
+ag125
+ag5
+ag167
+ag60
+ag71
 ag11
-ag32
+ag2
 ag5
 aS'Select the contact sport represented by the image ?'
-p414
-ag163
-ag231
-ag5
-ag277
-ag109
-ag231
-ag40
-ag58
-ag224
-aS'Which visual property is shown in the image ?'
-p415
-ag24
-ag108
-ag109
-aS'Which environment is shown in the image ?'
-p416
-ag84
-ag244
-ag160
-aS'Which area is shown in the image ?'
-p417
-ag357
-ag197
-ag112
-ag324
-ag40
-ag25
-ag31
-ag26
-ag19
-ag20
-ag17
-ag88
-ag61
-aS'Select the motor represented by the image ?'
-p418
-ag81
-ag104
-ag86
-ag258
-ag17
-ag184
+p306
 ag126
-aS'Select the person represented by the image ?'
-p419
-ag51
-ag253
-ag114
-aS'Select the auditory communication represented by the image ?'
-p420
-ag43
-ag44
-ag17
-ag23
-aS'What type of horizontal surface is present in the image ?'
-p421
-aS'Select the horizontal surface represented by the image ?'
-p422
-ag119
-ag120
+ag70
 ag5
-ag381
-ag31
-aS'Which stringed instrument is shown in the image ?'
-p423
-ag9
-aS"Select the woman's clothing represented by the image ?"
-p424
-ag38
-ag246
-ag178
+ag205
+ag88
+ag70
+ag34
+ag21
+ag169
+ag230
+ag22
 ag4
-ag29
-ag95
-aS'What type of outdoor sport is present in the image ?'
-p425
-ag108
-aS'Choose the type of tract present in the image ?'
-p426
+ag88
+aS'Select the environment represented by the image ?'
+p307
+ag53
+ag183
+ag73
 ag19
-ag192
-ag44
-ag19
-ag146
-ag81
-ag104
-ag84
-ag58
-ag29
-aS'Which walk is shown in the image ?'
-p427
-ag9
-aS'Select the yard represented by the image ?'
-p428
-ag31
-ag184
-aS'What type of land is present in the image ?'
-p429
-aS'Select the wetland represented by the image ?'
-p430
-ag224
+ag148
+ag147
 ag90
-aS'Choose the type of court game present in the image ?'
-p431
-ag44
-aS'Choose the type of track and field present in the image ?'
-p432
-ag193
-aS'Which outdoor sport is shown in the image ?'
-p433
-ag31
-ag136
-ag273
-ag98
-ag117
-ag5
-ag20
-ag31
-aS'Which woman is shown in the image ?'
-p434
-aS'What type of plumbing fixture is present in the image ?'
-p435
-ag29
-ag241
+ag242
+ag34
+ag23
+ag17
+ag24
+ag17
+ag18
+ag9
+ag23
+ag52
+aS'Select the motor represented by the image ?'
+p308
+ag60
 ag61
-ag388
-ag341
+ag73
+ag77
+ag9
+ag43
+ag101
+ag260
+ag34
+ag159
+ag55
+ag279
+ag37
+ag18
+ag9
+ag21
+ag250
+ag249
+ag94
+ag95
+ag5
+ag151
+ag17
+ag26
+ag9
+ag293
+ag32
+ag183
+ag96
+ag4
+ag5
+ag79
+aS'What type of outdoor sport is present in the image ?'
+p309
+ag4
+aS'What type of tract is present in the image ?'
+p310
+ag17
+ag67
+ag18
+ag17
 ag114
-ag420
-ag160
-aS'Which organization is shown in the image ?'
-p436
+ag60
+ag61
+ag53
+ag21
+ag5
+ag29
+ag9
+ag272
+ag17
+ag43
+aS'What type of land is present in the image ?'
+p311
+aS'Select the wetland represented by the image ?'
+p312
+ag169
+ag35
+ag104
+ag18
+ag119
+ag15
+ag164
+ag17
+ag62
+ag203
+ag42
+ag93
+ag5
+ag18
+ag17
+ag181
+aS'What type of plumbing fixture is present in the image ?'
+p313
+ag5
+ag143
+ag52
+ag287
+ag244
+ag55
+ag279
+ag73
+aS'Select the organization represented by the image ?'
+p314
 ag15
 ag3
-ag162
-aS'What type of natural elevation is present in the image ?'
-p437
+ag125
+ag297
 aS'Select the natural elevation represented by the image ?'
-p438
-ag77
-ag256
-ag83
-ag4
-ag17
-ag184
-ag19
-ag192
-ag12
-ag276
-ag244
-ag11
-ag408
-ag40
-ag115
-ag236
-ag44
-ag86
-ag5
-aS'Select the brome represented by the image ?'
-p439
-ag81
-ag82
-ag57
-ag6
-aS'Choose the type of gramineous plant present in the image ?'
-p440
-ag44
-ag5
-ag42
-ag212
-aS'What type of sign is present in the image ?'
-p441
-ag129
-ag178
-ag4
-ag107
-ag257
-aS'Choose the type of activity present in the image ?'
-p442
-ag99
-ag121
-ag210
-ag51
-ag221
-ag77
-aS'Select the plastic art represented by the image ?'
-p443
-ag11
-ag12
-ag5
-ag94
-ag29
-ag241
-ag70
-ag71
-aS'Choose the type of hair present in the image ?'
-p444
-ag434
-ag17
-aS'Which attire is shown in the image ?'
-p445
-ag31
-ag102
-ag288
-aS'Select the plain represented by the image ?'
-p446
-ag31
-aS'Which feat is shown in the image ?'
-p447
-aS'What type of contestant is present in the image ?'
-p448
-ag20
-aS'Choose the type of gun present in the image ?'
-p449
-ag171
-ag24
-ag25
-ag370
-ag184
-ag77
-ag119
-ag120
-ag19
-ag54
-ag370
-ag88
-ag17
-aS'Which clothing is shown in the image ?'
-p450
-aS'What type of sport is present in the image ?'
-p451
-ag240
-ag160
-ag231
+p315
+ag67
 ag27
+ag22
+ag4
+ag9
+ag43
+ag17
+ag67
+ag12
+ag32
+ag183
+ag11
+ag287
+ag34
+ag56
+ag110
+ag18
+ag73
+ag5
+ag179
+ag60
+ag71
+ag49
+ag6
+ag214
+ag18
+ag5
+ag36
+ag87
+aS'What type of sign is present in the image ?'
+p316
+ag95
+ag96
+ag4
+ag87
+ag190
+ag64
+ag14
+ag96
+ag158
+ag34
+ag115
+ag67
+ag8
+ag11
+ag12
+ag5
+ag79
+ag5
+ag143
+ag60
+ag61
+aS'What type of hair is present in the image ?'
+p317
+ag181
+ag9
+ag290
+ag17
+ag46
+ag215
+aS'Select the plain represented by the image ?'
+p318
+ag17
+aS'Select the feat represented by the image ?'
+p319
+ag37
+ag18
+aS'What type of gun is present in the image ?'
+p320
+ag132
+ag22
+ag23
+ag273
+ag43
+ag67
+ag94
+ag95
+ag17
+ag46
+ag273
+ag23
+ag9
+ag168
+ag124
+ag180
+ag73
+ag70
+ag25
+ag26
+ag5
+ag143
+ag53
+ag210
+ag73
+ag208
+ag83
+ag287
+aS'What type of car is present in the image ?'
+p321
+ag57
+ag5
+ag79
+ag52
+ag150
+ag17
+ag46
+ag34
+aS'Select the partition represented by the image ?'
+p322
+ag60
+ag61
+ag25
+ag26
+ag83
+ag180
+ag94
+ag16
+ag65
+ag66
+ag52
+ag57
+ag5
+ag79
+ag83
+ag180
+ag60
+ag71
+ag53
+ag181
+ag9
+ag168
+ag60
+ag61
+ag5
+ag17
+ag70
+ag239
+aS'Select the sculpture represented by the image ?'
+p323
+aS'What type of optical instrument is present in the image ?'
+p324
+ag259
+ag55
+ag180
+aS'What type of paving is present in the image ?'
+p325
+ag249
+ag17
+ag159
+ag5
+ag115
+ag142
+ag4
+ag17
+ag24
+aS'What type of percussion instrument is present in the image ?'
+p326
+aS'Select the bass represented by the image ?'
+p327
+ag42
+ag23
+aS'What type of locomotion is present in the image ?'
+p328
+aS'Select the course represented by the image ?'
+p329
+ag34
+ag2
+ag52
+aS'Select the formation represented by the image ?'
+p330
+aS'What type of promotion is present in the image ?'
+p331
+ag180
+ag142
+ag127
+ag320
+ag17
+ag44
+ag5
+ag143
+ag17
+ag18
+ag96
+ag114
+ag124
+ag18
+ag52
+ag125
+ag60
+ag61
+ag5
+ag167
+ag5
+ag79
+ag52
+ag125
+ag5
+ag20
+ag241
+ag203
+aS'What type of equine is present in the image ?'
+p332
+aS'Select the farm represented by the image ?'
+p333
 ag28
 ag29
-ag241
-ag84
-aS'Select the child represented by the image ?'
-p452
-ag160
-ag329
-ag101
-ag388
-aS'Choose the type of car present in the image ?'
-p453
-ag292
-ag5
-ag94
-ag132
-aS'Which artifact is shown in the image ?'
-p454
-ag19
-ag54
-ag51
-aS'Which partition is shown in the image ?'
-p455
-ag70
-ag71
-aS'Choose the type of musician present in the image ?'
-p456
-ag423
-ag101
-ag240
-ag119
-ag148
-ag222
-ag318
-ag132
-ag292
-ag5
-ag94
-ag153
-aS'Which time period is shown in the image ?'
-p457
-ag81
-ag82
-ag62
-ag434
-ag9
-ag223
-ag81
-ag104
-ag5
-ag31
-ag231
-ag351
-aS'Select the sculpture represented by the image ?'
-p458
-aS'Choose the type of optical instrument present in the image ?'
-p459
-aS'Which vessel is shown in the image ?'
-p460
-ag114
-ag240
-aS'Choose the type of paving present in the image ?'
-p461
-ag336
-ag19
-ag211
-ag29
-ag221
-ag185
-ag108
-ag31
-ag26
-aS'What type of percussion instrument is present in the image ?'
-p462
-aS'Select the bass represented by the image ?'
-p463
-ag98
-ag88
-aS'What type of locomotion is present in the image ?'
-p464
-aS'Select the course represented by the image ?'
-p465
-ag51
-ag32
+ag90
+ag242
+ag60
 ag61
-aS'Select the formation represented by the image ?'
-p466
-aS'Choose the type of promotion present in the image ?'
-p467
-ag457
-ag185
-ag186
-ag449
-ag19
-ag111
-ag29
-ag241
-ag31
-ag44
-ag121
-ag146
-ag161
-ag44
-ag61
-ag412
-ag81
-ag104
-ag5
-ag220
-ag5
-ag94
-ag132
-ag162
-ag5
-ag22
-aS'Choose the type of free-reed instrument present in the image ?'
-p468
-aS'Which musician is shown in the image ?'
-p469
-aS'What type of equine is present in the image ?'
-p470
-aS'Select the farm represented by the image ?'
-p471
-aS'Choose the type of path present in the image ?'
-p472
-ag427
-ag128
-aS'Select the container represented by the image ?'
-p473
-ag81
-ag104
-ag293
-ag148
+ag219
+ag16
 aS'What type of consideration is present in the image ?'
-p474
-ag31
-ag68
-ag70
-ag71
-ag272
-aS'Which output is shown in the image ?'
-p475
+p334
+ag17
+ag58
+ag60
+ag61
+ag202
+aS'Select the output represented by the image ?'
+p335
 ag5
-ag220
-ag51
-ag184
-ag40
-ag438
-ag352
-aS'Which organism is shown in the image ?'
-p476
-ag265
-ag103
-ag81
-ag336
+ag167
+ag34
+ag43
+ag34
+ag315
+ag98
+ag84
+ag195
+ag84
+ag60
+ag249
 ag5
-ag335
-ag326
+ag248
+ag13
 aS'What type of child is present in the image ?'
-p477
-ag129
-ag31
-ag44
+p336
+ag95
+ag17
+ag18
 ag5
 aS'Select the limb represented by the image ?'
-p478
-ag138
-ag90
-ag84
+p337
+ag49
+ag35
+ag53
 aS'Select the bedroom furniture represented by the image ?'
-p479
-ag81
-ag104
-ag195
-ag240
-ag81
-ag104
+p338
+ag60
 ag61
-ag65
-ag66
-ag19
-ag391
-ag31
-aS'What type of hotel is present in the image ?'
-p480
-aS'Select the tract represented by the image ?'
-p481
-ag81
-ag104
-aS'What type of atmospheric phenomenon is present in the image ?'
-p482
-ag238
+ag131
+ag180
+ag60
+ag61
+ag52
+ag55
+ag56
 ag17
-aS'Which limb is shown in the image ?'
-p483
-ag70
-ag466
-aS'Choose the type of life present in the image ?'
-p484
-ag82
-aS'What type of dirtiness is present in the image ?'
-p485
-ag173
-ag208
-aS'Select the upper surface represented by the image ?'
-p486
+ag290
+ag17
+aS'What type of hotel is present in the image ?'
+p339
+ag187
+ag60
 ag61
-ag41
-ag370
-ag184
-ag183
-ag80
-aS'Choose the type of digit present in the image ?'
-p487
-aS'Which articulator is shown in the image ?'
-p488
-ag70
+aS'What type of atmospheric phenomenon is present in the image ?'
+p340
+ag178
+ag9
+ag337
+ag60
+ag330
+aS'What type of life is present in the image ?'
+p341
 ag71
-aS'Choose the type of ceremony present in the image ?'
-p489
-aS'Which speech act is shown in the image ?'
-p490
-ag121
-ag244
-ag81
-ag104
-ag61
-ag381
-ag109
+ag202
+ag134
 ag40
-ag268
-ag302
-ag303
-aS'What type of structure is present in the image ?'
-p491
-ag281
-ag81
-ag104
-ag63
-ag64
-ag432
-ag454
-ag19
+aS'Select the upper surface represented by the image ?'
+p342
+ag52
+ag35
+ag273
+ag43
+ag88
+ag70
+aS'What type of digit is present in the image ?'
+p343
+aS'Select the articulator represented by the image ?'
+p344
+ag60
+ag61
+ag1
+aS'Select the speech act represented by the image ?'
+p345
+ag96
+ag183
+ag60
+ag61
+ag52
+ag151
+ag88
+ag34
+ag198
+ag224
+ag225
+ag117
+ag208
+ag60
+ag61
+ag11
+ag54
+ag119
+ag150
+ag17
 aS'Select the writing represented by the image ?'
-p492
-aS'Choose the type of portable computer present in the image ?'
-p493
-aS'Which verbal creation is shown in the image ?'
-p494
-ag19
-ag478
+p346
+aS'What type of portable computer is present in the image ?'
+p347
+aS'Select the verbal creation represented by the image ?'
+p348
+ag17
+ag337
 ag11
 ag12
-ag40
+ag34
 aS'Select the spot represented by the image ?'
-p495
-ag132
-ag292
-ag128
-ag93
-ag65
-ag66
-ag114
-ag115
-ag83
-ag44
-ag27
-ag191
-ag84
-aS'Select the custom represented by the image ?'
-p496
-ag86
-ag236
-ag44
-ag70
-ag71
-ag29
-ag30
-ag61
-ag412
-aS'Choose the type of undertaking present in the image ?'
-p497
+p349
+ag52
+ag57
 ag90
-ag57
-ag2
-ag212
-ag279
-ag40
-ag58
-ag40
-ag240
-ag62
-ag23
-ag40
+ag78
+ag55
+ag56
+ag55
+ag56
+ag22
+ag18
 ag25
+ag132
+ag53
+ag271
+ag73
+ag110
+ag18
+ag60
+ag61
+ag5
+ag27
+ag52
+ag125
+ag247
+ag35
+ag49
+ag2
+ag87
+ag190
+ag34
+ag21
+ag34
+ag180
+ag53
+ag21
+ag34
+ag23
+ag37
+ag18
+ag49
 ag43
-ag44
-ag57
-ag50
-ag31
-ag270
+ag17
+ag200
 ag9
-ag58
-ag160
-aS'Which solid is shown in the image ?'
-p498
+ag21
+ag73
+aS'Select the solid represented by the image ?'
+p350
 aS'What type of horseman is present in the image ?'
-p499
-ag256
-aS'Choose the type of equine present in the image ?'
-p500
-ag82
-ag70
-ag160
-aS'Which affair is shown in the image ?'
-p501
+p351
+ag27
+ag332
+ag71
+ag60
+ag73
+aS'Select the affair represented by the image ?'
+p352
 ag5
 aS'Select the ball game represented by the image ?'
-p502
-ag170
-ag433
-ag40
-ag25
-ag178
-ag179
-ag40
-ag115
-ag38
-ag309
-ag183
-ag200
-ag352
-ag476
-ag63
-ag188
-ag337
-aS'Which road is shown in the image ?'
-p503
-ag251
-ag407
-ag51
-ag356
-ag121
-ag210
-ag166
-ag297
-ag5
-ag502
-ag31
+p353
+ag131
+ag164
+ag34
+ag23
+ag96
+ag6
+ag34
+ag56
 ag32
-ag128
-ag473
-ag81
-ag104
-ag114
-aS'Select the performance represented by the image ?'
-p504
-ag153
-ag184
-ag345
-ag178
-ag90
-ag31
-ag102
-ag426
-ag356
-ag40
-ag36
-ag160
-ag195
-ag191
-ag456
-ag406
-aS'What type of performance is present in the image ?'
-p505
-ag211
-ag31
-ag102
-ag425
-ag115
-aS'Choose the type of movable barrier present in the image ?'
-p506
-ag382
-ag4
-ag156
-ag20
-ag109
-aS'Which gramineous plant is shown in the image ?'
-p507
-ag19
-ag50
-ag352
-ag476
-ag5
-ag94
-ag170
-ag44
-ag380
-ag301
-ag112
-ag324
-ag351
-aS'Choose the type of sign present in the image ?'
-p508
-aS'Which promotion is shown in the image ?'
-p509
-ag276
-ag244
-aS'Choose the type of float present in the image ?'
-p510
-ag5
-ag256
+ag39
+ag88
+ag150
+ag98
+ag84
 ag11
 ag12
-ag19
+ag250
+aS'Select the road represented by the image ?'
+p354
+ag126
+ag303
 ag34
-ag81
-ag104
-aS'What type of promotion is present in the image ?'
-p511
-ag299
+ag262
+ag96
+ag158
+ag128
+ag114
+ag5
+ag353
+ag17
+ag2
+ag90
+ag242
+ag60
+ag61
+ag55
+aS'Select the performance represented by the image ?'
+p355
+ag83
+ag43
+ag255
+ag96
+ag35
+ag17
+ag46
+ag310
+ag262
+ag34
+ag31
+ag73
+ag131
+ag132
+ag25
+ag256
+aS'What type of performance is present in the image ?'
+p356
+ag159
+ag17
+ag46
+ag309
+ag56
+aS'What type of movable barrier is present in the image ?'
+p357
+ag234
+ag4
+ag120
+ag18
+ag88
+ag36
+ag17
+ag43
+ag98
+ag84
+ag5
+ag79
+ag131
+ag18
+ag282
+ag223
+ag90
+ag242
+ag239
+ag316
+ag289
+ag32
+ag183
+ag207
+ag5
+ag27
+ag11
+ag12
+ag17
+ag29
+ag60
+ag61
+ag331
+ag222
 a.
