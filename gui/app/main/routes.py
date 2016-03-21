@@ -2,10 +2,25 @@ from flask import render_template, redirect, url_for, request
 from . import main
 # from forms import CategoryForm,TaskForm
 # from .. import Category,Task
+import os
+import random
+from .. import app
+
+def getRandomImages():
+	images = []
+	l = eval(app.open_resource('static/images.txt').read())
+	for i in range(9):
+		r = random.randint(0,len(l)-1)
+		images.append(l[r])
+	return images
 
 @main.route("/",methods=['GET','POST'])
 def index():
-	return render_template("index.html")
+	question = "Select the type of diversion present in the image."
+	choices = ["Option1","Option2","Option3","Option4"]
+	image_list = getRandomImages()
+	print image_list
+	return render_template("index.html",question=question,choices=choices,image_list=image_list,images=True)
 
 # @main.route("/add_category",methods=['GET','POST'])
 # def add_category():

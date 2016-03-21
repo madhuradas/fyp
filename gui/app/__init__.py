@@ -3,9 +3,9 @@ from flask.ext.bootstrap import Bootstrap
 from flask.ext.sqlalchemy import SQLAlchemy
 
 bootstrap = Bootstrap()
+app = Flask(__name__)
 
 def create_app(config_name):
-	app = Flask(__name__)
 	bootstrap.init_app(app)
 	
 	from .main import main as main_blueprint

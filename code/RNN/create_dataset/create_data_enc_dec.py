@@ -18,6 +18,9 @@ for q in initial_questions:
 	words.append("?")
 	questions.append(" ".join(words))
 
+classes = list(set(classes))
+questions = list(set(questions))
+
 model_q = Word2Vec([q.split(" ") for q in questions], size=30, window=1, min_count=1, workers=4)
 pickle.dump(model_q, open("../../../data/questions.pickle",'wb'))
 

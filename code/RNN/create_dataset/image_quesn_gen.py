@@ -1,4 +1,4 @@
-data = eval(open("../../google_api/image_wise_flickr_second.txt").read())
+data = eval(open("../../google_api/image_wise_2k.txt").read())
 ctr = 0
 ctr1 = 0
 quesn_data = dict()

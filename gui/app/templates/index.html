@@ -1,5 +1,97 @@
 {% extends 'base.html' %}
 
 {% block page_content %}
-		<img class="img-responsive" src="{{ url_for('static',filename='1.jpg') }}">		
+		<style type="text/css">
+		img:hover
+		{
+			cursor: pointer;
+		}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script type="text/javascript">
+        function refresh()
+        {
+          location.reload();
+        }
+
+        function check()
+        {
+        	arr = document.getElementsByTagName("input");
+        	for(i=0;i<arr.length;i++)
+        	{
+        		if(arr[i].type=='checkbox' && arr[i].checked==true)
+        			alert(arr[i].value);
+        	}
+        }
+        function loadImg(e)
+        {
+        	document.getElementById("img").src = e.target.src;
+        }
+        function loadAllImages(l)
+        {
+        	for(i=0;i<=8;i++)
+        	{
+        		document.getElementById("img"+(i+1)).src = "http://localhost:5000/static/"+l[i];
+        	}	
+        }
+        </script>
+        <body id="page-top" class="index" onload="loadAllImages({{image_list}})">
+
+		    <!-- Navigation -->
+		    <nav class="navbar navbar-default navbar-fixed-top" style="height:10px;">
+		        <a class="navbar-brand" href="#page-top" style="height:40px;top:5px;position:absolute;">CAPTCHA</a>
+		    </nav>
+	        <header>
+	        <div class="container" style="height:800px;">
+	            <div class="row">
+	                <div class="col-lg-12">
+	                </div>
+	            </div>
+	        </div>
+	    	</header>
+
+
+        <img id="img" height="400" width="350" style="float:left;top:12%;left:10%;position:fixed;border:5px solid #0B0B3B;">
+       <!--  <table style="float:left;top:12%;position:fixed;border-collapse: separate; border-spacing: 10px;">
+        	<tr>
+        		<td><img id="img" class="img-responsive" src="{{ url_for('static',filename='1.jpg') }}" height="110" width="110" style="border:5px solid #0B0B3B;"></td>
+        		<td><img id="img" class="img-responsive" src="{{ url_for('static',filename='1.jpg') }}" height="110" width="110" style="border:5px solid #0B0B3B;"></td>
+        		<td><img id="img" class="img-responsive" src="{{ url_for('static',filename='1.jpg') }}" height="110" width="110" style="border:5px solid #0B0B3B;"></td>
+        	</tr>
+        	<tr>
+        		<td><img id="img" class="img-responsive" src="{{ url_for('static',filename='1.jpg') }}" height="110" width="110" style="border:5px solid #0B0B3B;"></td>
+        		<td><img id="img" class="img-responsive" src="{{ url_for('static',filename='1.jpg') }}" height="110" width="110" style="border:5px solid #0B0B3B;"></td>
+        		<td><img id="img" class="img-responsive" src="{{ url_for('static',filename='1.jpg') }}" height="110" width="110" style="border:5px solid #0B0B3B;"></td>
+        	</tr>
+        	<tr>
+        		<td><img id="img" class="img-responsive" src="{{ url_for('static',filename='1.jpg') }}" height="110" width="110" style="border:5px solid #0B0B3B;"></td>
+        		<td><img id="img" class="img-responsive" src="{{ url_for('static',filename='1.jpg') }}" height="110" width="110" style="border:5px solid #0B0B3B;"></td>
+        		<td><img id="img" class="img-responsive" src="{{ url_for('static',filename='1.jpg') }}" height="110" width="110" style="border:5px solid #0B0B3B;"></td>
+        	</tr>
+        </table> -->
+         <table style="float:left;top:75%;left:1%;position:fixed;border-collapse: separate; border-spacing: 15px;">
+        	<tr>
+        		<td><a href="#" onclick="loadImg(event)"><img id="img1" class="img-responsive" height="110" width="110" style="border:5px solid #0B0B3B;"></a></td>
+        		<td><a href="#" onclick="loadImg(event)"><img id="img2" class="img-responsive" height="110" width="110" style="border:5px solid #0B0B3B;"></a></td>
+        		<td><a href="#" onclick="loadImg(event)"><img id="img3" class="img-responsive" height="110" width="110" style="border:5px solid #0B0B3B;"></a></td>
+        		<td><a href="#" onclick="loadImg(event)"><img id="img4" class="img-responsive" height="110" width="110" style="border:5px solid #0B0B3B;"></a></td>
+        		<td><a href="#" onclick="loadImg(event)"><img id="img5" class="img-responsive" height="110" width="110" style="border:5px solid #0B0B3B;"></a></td>
+        		<td><a href="#" onclick="loadImg(event)"><img id="img6" class="img-responsive" height="110" width="110" style="border:5px solid #0B0B3B;"></a></td>
+        		<td><a href="#" onclick="loadImg(event)"><img id="img7" class="img-responsive" height="110" width="110" style="border:5px solid #0B0B3B;"></a></td>
+        		<td><a href="#" onclick="loadImg(event)"><img id="img8" class="img-responsive" height="110" width="110" style="border:5px solid #0B0B3B;"></a></td>
+        		<td><a href="#" onclick="loadImg(event)"><img id="img9" class="img-responsive" height="110" width="110" style="border:5px solid #0B0B3B;"></a></td>
+        </table>
+			
+        <div style="top:17%;left:50%;position:fixed">
+		<h3><u>Question: </u></h3>
+		<p>{{ question }}</p>
+			{% for ch in choices %}
+				<label class="checkbox-inline">
+				  <input type="checkbox" value="{{ch}}"> {{ch}}
+				</label>
+				<br><br>
+			{% endfor %}
+		<input type="submit" class="btn btn-primary" value="SUBMIT" style="position:absolute;top:280px;left:170px;" onclick="">
+		<input type="button" class="btn btn-primary" value="LOAD" style="position:absolute;top:410px;left:520px;" onclick="refresh()">
+		</div>
 {% endblock %}
