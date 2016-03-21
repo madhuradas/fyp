@@ -1,4 +1,4 @@
-data = eval(open("google_api/image_wise.txt").read())
+data = eval(open("../../google_api/image_wise_flickr_second.txt").read())
 ctr = 0
 ctr1 = 0
 quesn_data = dict()
@@ -19,5 +19,4 @@ for img in data.keys():
 open('ques.txt','w').write(str(quesn_data))
 
 import pickle
-pickle.dump(quesn_data, open("new_questions/image_wise_quesn.pickle",'wb'))
-open("new_questions/image_wise_quesn.txt","w").write(str(quesn_data))
+pickle.dump(quesn_data, open("../../../data/image_wise_quesn.pickle",'wb'))
