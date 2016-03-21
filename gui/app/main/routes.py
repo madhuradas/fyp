@@ -20,7 +20,7 @@ def index():
 	choices = ["Option1","Option2","Option3","Option4"]
 	image_list = getRandomImages()
 	print image_list
-	return render_template("index.html",question=question,choices=choices,image_list=image_list,images=True)
+	return render_template("index.html",question=question,choices=choices,image_list=image_list)
 
 # @main.route("/add_category",methods=['GET','POST'])
 # def add_category():
