@@ -1,22 +1,37 @@
-data = eval(open("../../google_api/image_wise_2k.txt").read())
-ctr = 0
-ctr1 = 0
-quesn_data = dict()
-for img in data.keys():
-	objs = data[img]
-	quesn_list = []
-	if(len(objs)>=1):
-		quesn_list.append((" ".join(str(str(objs[0][2]).split(".")[0]).split("_")), "What type of "+" ".join(str(str(objs[0][2]).split(".")[0]).split("_")) +" is present in the image ?"))
-	# if(len(objs)>=1 and ctr%2 == 1):
-	# 	quesn_list.append((" ".join(str(str(objs[0][2]).split(".")[0]).split("_")),"Choose the type of "+" ".join(str(str(objs[0][2]).split(".")[0]).split("_")) +" present in the image?"))
-	# if(len(objs)>=2 and ctr%2 == 1):
-	# 	quesn_list.append((" ".join(str(str(objs[1][2]).split(".")[0]).split("_")),"Which "+" ".join(str(str(objs[1][2]).split(".")[0]).split("_"))+" is shown in the image?" ))
-	if(len(objs)>=2):
-		quesn_list.append((" ".join(str(str(objs[1][2]).split(".")[0]).split("_")),"Select the "+" ".join(str(str(objs[1][2]).split(".")[0]).split("_"))+" represented by the image ?" ))
-	quesn_data[img] = quesn_list
-	ctr+=1
+import nltk, pickle
+from matplotlib import colors
 
-open('ques.txt','w').write(str(quesn_data))
+data = eval(open("../../flickr30k/tuples_2000.txt").read())
+# data = [('clothing', 'striped polo shirt'), ('scene', 'seated position'), ('vehicles', 'three wheeled bikes')]
+ques_list = []
+c = 0
 
-import pickle
-pickle.dump(quesn_data, open("../../../data/image_wise_quesn.pickle",'wb'))
+for tup in data:
+	if tup[0] == 'animals' or tup[0] == 'vehicles':
+		tags = nltk.pos_tag(nltk.word_tokenize(tup[1]))
+		for t in tags:
+			if t[1] == 'CD': # number 
+				ques_list.append((tup[0], 'How many ' + tup[1].replace(t[0],'').strip() + ' are present in the image ?', tup[1]))
+			if t[1] == 'JJ' and t[1] in colors.cnames.keys(): # color
+				for x in tags:
+					if x[1] == 'NNS' or x[1] == 'NN':
+						ques_list.append((tup[0], 'What is the color of ' + x[0] + ' shown in the image ?', tup[1]))
+
+	elif tup[0] == 'people':
+		tags = nltk.pos_tag(nltk.word_tokenize(tup[1]))
+		for t in tags:
+			if t[1] == 'CD': # number 
+				ques_list.append((tup[0], 'How many ' + tup[1].replace(t[0],'').strip() + ' are there in the image ?', tup[1]))
+
+	elif tup[0] == 'clothing':
+		ques_list.append((tup[0], 'What is the person in the image wearing ?' , tup[1]))
+
+	if c%2 == 0:
+		ques_list.append((tup[0], 'What is the type of ' + tup[0] + ' present in the image ?' , tup[1]))
+	else:
+		ques_list.append((tup[0], 'Select the type of ' + tup[0] + ' present in the image ?' , tup[1]))
+
+	c += 1
+
+# print ques_list
+pickle.dump(ques_list, open('../../../data/image_wise_quesn.pickle','wb'))

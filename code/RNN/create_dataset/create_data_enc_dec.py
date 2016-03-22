@@ -4,22 +4,23 @@ from gensim.models import Word2Vec
 ques = pickle.load(open("../../../data/image_wise_quesn.pickle",'rb'))
 classes = []
 initial_questions = []
-for k in ques.keys():
-	for v in ques[k]:
-		classes.append(v[0])
-		initial_questions.append(v[1])
+for k in ques:
+	classes.append(k[0])
+	initial_questions.append(k[1])
 
-questions=[]
-for q in initial_questions:
-	words = q.split(" ")
-	last_word = words[-1]
-	del words[-1]
-	words.append(last_word.split("?")[0])
-	words.append("?")
-	questions.append(" ".join(words))
+# questions = []
+# for q in initial_questions:
+# 	words = q.split(" ")
+# 	last_word = words[-1]
+# 	del words[-1]
+# 	words.append(last_word.split("?")[0])
+# 	words.append("?")
+# 	questions.append(" ".join(words))
 
 # classes = list(set(classes))
 # questions = list(set(questions))
+
+questions = initial_questions
 
 model_q = Word2Vec([q.split(" ") for q in questions], size=30, window=1, min_count=1, workers=4)
 pickle.dump(model_q, open("../../../data/questions.pickle",'wb'))
