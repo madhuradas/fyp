@@ -23,15 +23,38 @@
         			alert(arr[i].value);
         	}
         }
-        function loadImg(e)
+        function loadImg(e,q_list,ch_list)
         {
+            document.getElementById("header").innerHTML = "question";
+
+            document.getElementById("submit").style.display = "block";
+
         	document.getElementById("img").src = e.target.src;
+            id = parseInt(e.target.id);
+            document.getElementById("question").innerHTML = q_list[id-1];
+
+            document.getElementById("op").innerHTML = "";
+            choices =  ch_list[id-1].split(";");
+            label = document.getElementById("op");
+            
+            for(i=0;i<choices.length;i++)
+            {
+                inp = document.createElement("input");
+                inp.type="checkbox";
+                inp.name=choices[i];
+                inp.value=choices[i];
+                span = document.createElement("span");
+                span.innerHTML += "<br><br>"+choices[i]+"&nbsp;&nbsp;&nbsp;&nbsp;";
+                span.appendChild(inp);
+                label.appendChild(span);
+            }
+
         }
         function loadAllImages(l)
         {
         	for(i=0;i<=8;i++)
         	{
-        		document.getElementById("img"+(i+1)).src = "http://localhost:5000/static/"+l[i];
+        		document.getElementById(""+(i+1)).src = "http://localhost:5000/static/"+l[i];
         	}	
         }
         </script>
@@ -49,49 +72,49 @@
 	            </div>
 	        </div>
 	    	</header>
+       
 
-
-        <img id="img" height="400" width="350" style="float:left;top:12%;left:10%;position:fixed;border:5px solid #0B0B3B;">
-       <!--  <table style="float:left;top:12%;position:fixed;border-collapse: separate; border-spacing: 10px;">
-        	<tr>
-        		<td><img id="img" class="img-responsive" src="{{ url_for('static',filename='1.jpg') }}" height="110" width="110" style="border:5px solid #0B0B3B;"></td>
-        		<td><img id="img" class="img-responsive" src="{{ url_for('static',filename='1.jpg') }}" height="110" width="110" style="border:5px solid #0B0B3B;"></td>
-        		<td><img id="img" class="img-responsive" src="{{ url_for('static',filename='1.jpg') }}" height="110" width="110" style="border:5px solid #0B0B3B;"></td>
-        	</tr>
-        	<tr>
-        		<td><img id="img" class="img-responsive" src="{{ url_for('static',filename='1.jpg') }}" height="110" width="110" style="border:5px solid #0B0B3B;"></td>
-        		<td><img id="img" class="img-responsive" src="{{ url_for('static',filename='1.jpg') }}" height="110" width="110" style="border:5px solid #0B0B3B;"></td>
-        		<td><img id="img" class="img-responsive" src="{{ url_for('static',filename='1.jpg') }}" height="110" width="110" style="border:5px solid #0B0B3B;"></td>
-        	</tr>
-        	<tr>
-        		<td><img id="img" class="img-responsive" src="{{ url_for('static',filename='1.jpg') }}" height="110" width="110" style="border:5px solid #0B0B3B;"></td>
-        		<td><img id="img" class="img-responsive" src="{{ url_for('static',filename='1.jpg') }}" height="110" width="110" style="border:5px solid #0B0B3B;"></td>
-        		<td><img id="img" class="img-responsive" src="{{ url_for('static',filename='1.jpg') }}" height="110" width="110" style="border:5px solid #0B0B3B;"></td>
-        	</tr>
-        </table> -->
+        <img id="img" height="410" width="450" style="float:left;top:12%;left:10%;position:fixed;border:5px solid #0B0B3B;">
          <table style="float:left;top:75%;left:1%;position:fixed;border-collapse: separate; border-spacing: 15px;">
         	<tr>
-        		<td><a href="#" onclick="loadImg(event)"><img id="img1" class="img-responsive" height="110" width="110" style="border:5px solid #0B0B3B;"></a></td>
-        		<td><a href="#" onclick="loadImg(event)"><img id="img2" class="img-responsive" height="110" width="110" style="border:5px solid #0B0B3B;"></a></td>
-        		<td><a href="#" onclick="loadImg(event)"><img id="img3" class="img-responsive" height="110" width="110" style="border:5px solid #0B0B3B;"></a></td>
-        		<td><a href="#" onclick="loadImg(event)"><img id="img4" class="img-responsive" height="110" width="110" style="border:5px solid #0B0B3B;"></a></td>
-        		<td><a href="#" onclick="loadImg(event)"><img id="img5" class="img-responsive" height="110" width="110" style="border:5px solid #0B0B3B;"></a></td>
-        		<td><a href="#" onclick="loadImg(event)"><img id="img6" class="img-responsive" height="110" width="110" style="border:5px solid #0B0B3B;"></a></td>
-        		<td><a href="#" onclick="loadImg(event)"><img id="img7" class="img-responsive" height="110" width="110" style="border:5px solid #0B0B3B;"></a></td>
-        		<td><a href="#" onclick="loadImg(event)"><img id="img8" class="img-responsive" height="110" width="110" style="border:5px solid #0B0B3B;"></a></td>
-        		<td><a href="#" onclick="loadImg(event)"><img id="img9" class="img-responsive" height="110" width="110" style="border:5px solid #0B0B3B;"></a></td>
+        		<td><img onclick="loadImg(event,{{question_list}},{{choices_list}})" id="1"  height="110" width="110" style="border:5px solid #0B0B3B;"></td>
+                <td><img onclick="loadImg(event,{{question_list}},{{choices_list}})" id="2"  height="110" width="110" style="border:5px solid #0B0B3B;"></td>
+                <td><img onclick="loadImg(event,{{question_list}},{{choices_list}})" id="3"  height="110" width="110" style="border:5px solid #0B0B3B;"></td>
+                <td><img onclick="loadImg(event,{{question_list}},{{choices_list}})" id="4"  height="110" width="110" style="border:5px solid #0B0B3B;"></td>
+                <td><img onclick="loadImg(event,{{question_list}},{{choices_list}})" id="5"  height="110" width="110" style="border:5px solid #0B0B3B;"></td>
+                <td><img onclick="loadImg(event,{{question_list}},{{choices_list}})" id="6"  height="110" width="110" style="border:5px solid #0B0B3B;"></td>
+                <td><img onclick="loadImg(event,{{question_list}},{{choices_list}})" id="7"  height="110" width="110" style="border:5px solid #0B0B3B;"></td>
+                <td><img onclick="loadImg(event,{{question_list}},{{choices_list}})" id="8"  height="110" width="110" style="border:5px solid #0B0B3B;"></td>
+                <td><img onclick="loadImg(event,{{question_list}},{{choices_list}})" id="9"  height="110" width="110" style="border:5px solid #0B0B3B;"></td>
         </table>
-			
-        <div style="top:17%;left:50%;position:fixed">
-		<h3><u>Question: </u></h3>
-		<p>{{ question }}</p>
-			{% for ch in choices %}
+		
+
+        <form method="POST" action="{{ url_for('main.index') }}">
+        <div style="top:17%;left:60%;position:fixed;width:400px;">
+         {% if alert_message %}
+                {% if not alert_type %} {% set alert_type = 'info' %} {% endif %} 
+                    {% set alert_class = "alert alert-dismissable alert-" + alert_type %}
+                <div class="{{ alert_class }}">
+                   <button type = "button" class = "close" data-dismiss = "alert" aria-hidden = "true">
+                      &times;
+                   </button>
+                  <p> {{alert_message | e }} </p>
+                </div>
+        {% endif %}
+		<h3><u id="header"></u></h3>
+		<p id="question"></p>
+            <div id="op">
 				<label class="checkbox-inline">
-				  <input type="checkbox" value="{{ch}}"> {{ch}}
+				  <!-- <input type="checkbox" value="HI THere" name="{{ch}}" id="">  -->
 				</label>
 				<br><br>
-			{% endfor %}
-		<input type="submit" class="btn btn-primary" value="SUBMIT" style="position:absolute;top:280px;left:170px;" onclick="">
-		<input type="button" class="btn btn-primary" value="LOAD" style="position:absolute;top:410px;left:520px;" onclick="refresh()">
+            </div>
+
+		<input name="submit" id="submit" type="submit" class="btn btn-primary" value="SUBMIT" style="position:absolute;top:320px;display:none;" onclick="">
+
+		<input type="button" class="btn btn-primary" value="LOAD" style="position:absolute;top:410px;left:380px;" onclick="refresh()">
+    
 		</div>
+
+        </form>
 {% endblock %}

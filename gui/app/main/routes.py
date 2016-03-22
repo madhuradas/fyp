@@ -17,10 +17,18 @@ def getRandomImages():
 @main.route("/",methods=['GET','POST'])
 def index():
 	question = "Select the type of diversion present in the image."
-	choices = ["Option1","Option2","Option3","Option4"]
+	choices_list = ["Option1;Option2;Option3;Option4" for i in range(9)]
+	answer_choices=["Option1","Option2","Option3","Option4"]
 	image_list = getRandomImages()
-	print image_list
-	return render_template("index.html",question=question,choices=choices,image_list=image_list)
+	question_list = ["question"+str(i) for i in range(1,10)]
+	if request.method=='POST' and request.form['submit']:
+		for ch in answer_choices:
+			if ch in dict(request.form).keys():
+				print "Selected Option:",ch
+				return render_template("index.html",choices_list=choices_list,question_list=question_list,image_list=image_list,alert_message="That is the correct answer!",alert_type='info')
+		else:
+			return render_template("index.html",choices_list=choices_list,image_list=image_list,question_list=question_list,alert_message="That is the wrong answer!",alert_type='danger')
+	return render_template("index.html",choices_list=choices_list,image_list=image_list,question_list=question_list)
 
 # @main.route("/add_category",methods=['GET','POST'])
 # def add_category():
