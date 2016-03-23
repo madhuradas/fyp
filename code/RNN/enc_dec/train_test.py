@@ -10,14 +10,14 @@ def train(model_file):
 
 def test(model_file):
     enc_dec = load('../../../data/' + model_file)
-    classes = list(set(open('../create_dataset/classes_obj.txt').read().split(';')))
+    classes = open('../create_dataset/classes_obj.txt').read().split(';')
     # del classes[classes.index('other')]
     # del classes[classes.index('people')]
-    #obj = eval(open("../create_dataset/objects.txt").read())
+    obj = eval(open("../create_dataset/objects.txt").read())
     c = 0
     for i in range(len(classes)):
         print 'Class : ', classes[i] #eval(open('ques.txt').read()).values()[500]
-        #print 'Object : ', obj[i]
+        print 'Object : ', obj[i]
         ques = enc_dec.predict_question([model_cls[classes[i]]], ix_to_first_word, ix_to_vocab, model_q)
         print ques
         #time.sleep(2)
