@@ -37,7 +37,7 @@ class RNN(object):
             mem += dparam * dparam
             param += -self.learning_rate * dparam / np.sqrt(mem + 1e-8)  # adagrad update
 
-    def BPTT(self, X, y, hprev, xs=None, hs=None, ps=None, loss=None, forward=False):
+    def BPTT(self, X, y, hprev, rnn_type, xs=None, hs=None, ps=None, loss=None, forward=False):
         '''
         X : training example
         y : the output label
@@ -54,9 +54,12 @@ class RNN(object):
 	    hs[-1] = np.copy(hprev)
 	    loss = 0
             for t in xrange(len(X)):
-                # xs[t] = np.reshape(X[t],(self.input_dim,1)) # for word2vec
-                xs[t] = np.zeros((self.input_dim, 1))  # encode in 1-of-k representation
-                xs[t][X[t]] = 1
+				if rnn_type == 'dec':
+				    xs[t] = np.reshape(X[t],(self.input_dim,1)) # for word2vec
+				else:
+                    xs[t] = np.zeros((self.input_dim, 1))  # encode in 1-of-k representation
+                    #pdb.set_trace()
+                    xs[t][X[t]] = 1
                 hs[t] = np.tanh(np.dot(self.Wxh, xs[t]) + np.dot(self.Whh, hs[t - 1]) + self.bh)  # hidden state
                 ys[t] = np.dot(self.Why, hs[t]) + self.by  # unnormalized log probabilities for next chars
                 ps[t] = np.exp(ys[t]) / np.sum(np.exp(ys[t]))  # probabilities for next chars

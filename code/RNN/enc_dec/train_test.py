@@ -4,7 +4,7 @@ import sys
 import time
 
 def train(model_file):
-    enc_dec = encoder_decoder(len(first_word_to_ix.keys()), 30, 100, len(vocab_to_ix.keys()), 30, 100)
+    enc_dec = encoder_decoder(len(first_word_to_ix.keys()), len(ix_to_class_obj.keys()), 100, len(vocab_to_ix.keys()), 30, 100)
     enc_dec.train(inputs, targets, 15, vocab_to_ix, first_word_to_ix, model_q)
     enc_dec.save('../../../data/' + model_file)
 
@@ -48,6 +48,7 @@ if __name__ == "__main__":
     first_word_to_ix = pickle.load(open('../../../data/first_word_to_ix.pickle'))
     vocab_to_ix = pickle.load(open('../../../data/vocab_to_ix.pickle'))
     ix_to_vocab = pickle.load(open('../../../data/ix_to_vocab.pickle'))
+    ix_to_class_obj = pickle.load(open('../../../data/ix_to_class_obj.pickle'))
     model_q = pickle.load(open('../../../data/questions.pickle'))
     model_cls = pickle.load(open('../../../data/classes_obj.pickle'))
     if sys.argv[1] == "train":

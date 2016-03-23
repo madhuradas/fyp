@@ -47,7 +47,7 @@ ques_vocab = set()
 first_words = set()
 class_obj = set()
 
-for c in class_obj:
+for c in classes_obj:
 	class_obj.add(c)
 	
 for q in questions:
@@ -65,10 +65,12 @@ class_obj_to_ix = {c: i for i, c in enumerate(class_obj)}
 for tup in d:
     if tup[-1] == 1:
         # send class
-        inputs.append(model_cls[tup[0]])
+        # inputs.append(model_cls[tup[0]])
+		inputs.append(class_obj_to_ix[tup[0]])
     else:
         # send obj
-        inputs.append(model_cls[tup[2]])
+        # inputs.append(model_cls[tup[2]])
+		inputs.append(class_obj_to_ix[tup[2]])
     targets.append(tup[1])
 
 pickle.dump(inputs, open('../../../data/enc_dec_inputs.pickle', 'wb'))
