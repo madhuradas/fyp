@@ -1,0 +1,18 @@
+Class :  bodyparts
+Select the type of bodyparts present in the image ?
+Class :  animals
+How many animals are present in the image ?
+Class :  people
+How many people are present in the image ?
+Class :  instruments
+What is the type of instruments present in the image ?
+Class :  vehicles
+Which type of vehicle(s) are present in the image ?
+Class :  scene
+What is the type of scene present in the image ?
+Class :  other
+Which of the following is present in the image ?
+Class :  clothing
+What is the person in the image wearing ?
+8
+Accuracy :  100.0

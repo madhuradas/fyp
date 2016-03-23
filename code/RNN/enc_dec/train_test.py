@@ -1,6 +1,7 @@
 from encoder_decoder import *
 import pickle
 import sys
+import time
 
 def train(model_file):
     enc_dec = encoder_decoder(len(first_word_to_ix.keys()), 30, 100, len(vocab_to_ix.keys()), 30, 100)
@@ -9,19 +10,29 @@ def train(model_file):
 
 def test(model_file):
     enc_dec = load('../../../data/' + model_file)
-    classes = open('../create_dataset/classes_obj.txt').read().split(';')
+    classes = list(set(open('../create_dataset/classes_obj.txt').read().split(';')))
+    # del classes[classes.index('other')]
+    # del classes[classes.index('people')]
+    #obj = eval(open("../create_dataset/objects.txt").read())
     c = 0
-    for cls in classes:
-        print 'Class/Object : ', cls #eval(open('ques.txt').read()).values()[500]
-        ques = enc_dec.predict_question([model_cls[cls]], ix_to_first_word, ix_to_vocab, model_q)
+    for i in range(len(classes)):
+        print 'Class : ', classes[i] #eval(open('ques.txt').read()).values()[500]
+        #print 'Object : ', obj[i]
+        ques = enc_dec.predict_question([model_cls[classes[i]]], ix_to_first_word, ix_to_vocab, model_q)
         print ques
+        #time.sleep(2)
         #pdb.set_trace()
-        if cls == 'clothing' and ques == 'What is the person in the image wearing ?':
+        if classes[i] == 'clothing' and ques == 'What is the person in the image wearing ?':
             c += 1
-        elif cls in ques.split(' '):
+        elif classes[i] in ques.split(' '):
             c += 1
-        elif cls == 'other' and ques == 'Which of the following is present in the image ?':
+        elif classes[i] == "vehicles" and "vehicle(s)" in ques.split(' '):
+             c+=1
+        elif classes[i] == "instruments" and "instrument(s)" in ques.split(' '):
+            c+=1
+        elif classes[i] == 'other' and ques == 'Which of the following is present in the image ?':
             c += 1
+    print  c
     print 'Accuracy : ', (c/float(len(classes))) * 100
 
 if __name__ == "__main__":
@@ -38,7 +49,7 @@ if __name__ == "__main__":
     vocab_to_ix = pickle.load(open('../../../data/vocab_to_ix.pickle'))
     ix_to_vocab = pickle.load(open('../../../data/ix_to_vocab.pickle'))
     model_q = pickle.load(open('../../../data/questions.pickle'))
-    model_cls = pickle.load(open('../../../data/classes.pickle'))
+    model_cls = pickle.load(open('../../../data/classes_obj.pickle'))
     if sys.argv[1] == "train":
         train(sys.argv[2])
     if sys.argv[1] == "test":

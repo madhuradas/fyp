@@ -3,8 +3,10 @@ from gensim.models import Word2Vec
 
 ques = pickle.load(open("../../../data/image_wise_quesn.pickle",'rb'))
 classes_obj = []
+obj = []
 initial_questions = []
 for k in ques:
+    obj.append(k[2])
     if k[-1] == 1:
         # 1 means question based on class, append the class
         classes_obj.append(k[0])
@@ -13,6 +15,7 @@ for k in ques:
         classes_obj.append(k[2])
     initial_questions.append(k[1])
 
+open("objects.txt","w").write(str(obj))
 # questions = []
 # for q in initial_questions:
 #     words = q.split(" ")
