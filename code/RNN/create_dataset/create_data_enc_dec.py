@@ -45,6 +45,11 @@ targets = []
 d = eval(open('ques_annotations.txt').read())
 ques_vocab = set()
 first_words = set()
+class_obj = set()
+
+for c in class_obj:
+	class_obj.add(c)
+	
 for q in questions:
     for i in q.split(' '):
         ques_vocab.add(i)
@@ -54,6 +59,8 @@ ix_to_first_word = {i: w for i, w in enumerate(first_words)}
 first_word_to_ix = {w: i for i, w in enumerate(first_words)}
 vocab_to_ix = {w: i for i, w in enumerate(ques_vocab)}
 ix_to_vocab = {i: w for i, w in enumerate(ques_vocab)}
+ix_to_class_obj = {i: c for i, c in enumerate(class_obj)}
+class_obj_to_ix = {c: i for i, c in enumerate(class_obj)}
 
 for tup in d:
     if tup[-1] == 1:
@@ -70,3 +77,5 @@ pickle.dump(ix_to_vocab, open('../../../data/ix_to_vocab.pickle', 'wb'))
 pickle.dump(ix_to_first_word, open('../../../data/ix_to_first_word.pickle', 'wb'))
 pickle.dump(vocab_to_ix, open('../../../data/vocab_to_ix.pickle', 'wb'))
 pickle.dump(first_word_to_ix, open('../../../data/first_word_to_ix.pickle', 'wb'))
+pickle.dump(ix_to_class_obj, open('../../../data/ix_to_class_obj.pickle', 'wb'))
+pickle.dump(class_obj_to_ix, open('../../../data/class_obj_to_ix.pickle', 'wb'))

@@ -54,7 +54,9 @@ class RNN(object):
 	    hs[-1] = np.copy(hprev)
 	    loss = 0
             for t in xrange(len(X)):
-                xs[t] = np.reshape(X[t],(self.input_dim,1)) #np.zeros((self.input_dim, 1))  # encode in 1-of-k representation
+                # xs[t] = np.reshape(X[t],(self.input_dim,1)) # for word2vec
+                xs[t] = np.zeros((self.input_dim, 1))  # encode in 1-of-k representation
+                xs[t][X[t]] = 1
                 hs[t] = np.tanh(np.dot(self.Wxh, xs[t]) + np.dot(self.Whh, hs[t - 1]) + self.bh)  # hidden state
                 ys[t] = np.dot(self.Why, hs[t]) + self.by  # unnormalized log probabilities for next chars
                 ps[t] = np.exp(ys[t]) / np.sum(np.exp(ys[t]))  # probabilities for next chars
@@ -75,9 +77,9 @@ class RNN(object):
                 dhraw = (1 - hs[t] * hs[t]) * dh  # backprop through tanh nonlinearity
                 dbh += dhraw
                 dWxh += np.dot(dhraw, xs[t].T)
-
-            dWhh += np.dot(dhraw, hs[t - 1].T)
-            dhnext = np.dot(self.Whh.T, dhraw)
+                # was outside for loop
+                dWhh += np.dot(dhraw, hs[t - 1].T)
+                dhnext = np.dot(self.Whh.T, dhraw)
             for dparam in [dWxh, dWhh, dWhy, dbh, dby]:
                 np.clip(dparam, -5, 5, out=dparam)  # clip to mitigate exploding gradients
             return loss, dWxh, dWhh, dWhy, dbh, dby, hs[len(X) - 1]
