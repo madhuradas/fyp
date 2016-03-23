@@ -1,8 +1,14 @@
 (dp0
-S'What'
+S'How'
 p1
 I0
-sS'Select'
+sS'What'
 p2
 I1
+sS'Select'
+p3
+I3
+sS'Which'
+p4
+I2
 s.

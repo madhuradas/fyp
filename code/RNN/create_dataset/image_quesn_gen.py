@@ -7,6 +7,7 @@ ques_list = []
 c = 0
 
 for tup in data:
+	print c
 	if tup[0] == 'animals' or tup[0] == 'vehicles':
 		tags = nltk.pos_tag(nltk.word_tokenize(tup[1]))
 		for t in tags:
@@ -26,6 +27,9 @@ for tup in data:
 	elif tup[0] == 'clothing':
 		ques_list.append((tup[0], 'What is the person in the image wearing ?' , tup[1]))
 
+	elif tup[0] == 'other':
+		ques_list.append((tup[0], 'Which of the following is present in the image ?' , tup[1]))
+
 	if c%2 == 0:
 		ques_list.append((tup[0], 'What is the type of ' + tup[0] + ' present in the image ?' , tup[1]))
 	else:
@@ -34,4 +38,5 @@ for tup in data:
 	c += 1
 
 # print ques_list
+open("ques_annotations.txt","w").write(str(ques_list))
 pickle.dump(ques_list, open('../../../data/image_wise_quesn.pickle','wb'))

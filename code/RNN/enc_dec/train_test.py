@@ -18,6 +18,8 @@ def test():
 		#pdb.set_trace()
 	    if cls in ques.split(' '):
 	        c += 1
+	    if cls=='other' and ques == 'Which of the following is present in the image ?':
+	    	c += 1
 	print 'Accuracy : ', (c/float(len(classes))) * 100
 
 if __name__ == "__main__":

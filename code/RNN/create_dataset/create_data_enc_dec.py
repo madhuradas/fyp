@@ -34,7 +34,7 @@ open("questions.txt","w").write(";".join(questions))
 
 inputs = []
 targets = []
-d = eval(open('ques.txt').read())
+d = eval(open('ques_annotations.txt').read())
 ques_vocab = set()
 first_words = set()
 for q in questions:
@@ -47,10 +47,9 @@ first_word_to_ix = {ch: i for i, ch in enumerate(first_words)}
 vocab_to_ix = {ch: i for i, ch in enumerate(ques_vocab)}
 ix_to_vocab = {i: ch for i, ch in enumerate(ques_vocab)}
 
-for img in d.keys():
-    for tup in d[img]:
-        inputs.append(model_cls[tup[0]])
-        targets.append(tup[1])
+for tup in d:
+    inputs.append(model_cls[tup[0]])
+    targets.append(tup[1])
 
 pickle.dump(inputs, open('../../../data/enc_dec_inputs.pickle', 'wb'))
 pickle.dump(targets, open('../../../data/enc_dec_targets.pickle', 'wb'))
