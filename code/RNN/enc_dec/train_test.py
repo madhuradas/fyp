@@ -18,7 +18,7 @@ def test(model_file):
     for i in range(len(classes)):
         print 'Class : ', classes[i] #eval(open('ques.txt').read()).values()[500]
         print 'Object : ', obj[i]
-        ques = enc_dec.predict_question([model_cls[classes[i]]], ix_to_first_word, ix_to_vocab, model_q)
+        ques = enc_dec.predict_question([class_obj_to_ix[classes[i]]], ix_to_first_word, ix_to_vocab, model_q)
         print ques
         #time.sleep(2)
         #pdb.set_trace()
@@ -49,6 +49,7 @@ if __name__ == "__main__":
     vocab_to_ix = pickle.load(open('../../../data/vocab_to_ix.pickle'))
     ix_to_vocab = pickle.load(open('../../../data/ix_to_vocab.pickle'))
     ix_to_class_obj = pickle.load(open('../../../data/ix_to_class_obj.pickle'))
+    class_obj_to_ix = pickle.load(open('../../../data/class_obj_to_ix.pickle'))
     model_q = pickle.load(open('../../../data/questions.pickle'))
     model_cls = pickle.load(open('../../../data/classes_obj.pickle'))
     if sys.argv[1] == "train":

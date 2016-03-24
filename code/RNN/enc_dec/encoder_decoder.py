@@ -46,7 +46,7 @@ class encoder_decoder(object):
 		# Decoder Back pass
                 dec_loss, dec_dWxh, dec_dWhh, dec_dWhy, dec_dbh, dec_dby, dec_hprev = self.decoder.BPTT(
                     [model_q[word] for word in targets[j].split(' ')[:-1]],
-                    [vocab_to_ix[word] for word in targets[j].split(' ')[1:]], dec_hs[len([model_q[word] for word in targets[j].split(' ')[:-1]])-1], xs=dec_xs, hs=dec_hs, ps=dec_ps, loss=dec_loss, forward=False)
+                    [vocab_to_ix[word] for word in targets[j].split(' ')[1:]], dec_hs[len([model_q[word] for word in targets[j].split(' ')[:-1]])-1], 'dec', xs=dec_xs, hs=dec_hs, ps=dec_ps, loss=dec_loss, forward=False)
 
                 # minimize the loss for decoder
                 dec_weights_derivatives_mem = zip(
@@ -57,7 +57,7 @@ class encoder_decoder(object):
                 print 'epoch %d, DECODER loss: %f' % (i, dec_smooth_loss)  # print progress
 
                 # Encoder Back pass
-                enc_loss, enc_dWxh, enc_dWhh, enc_dWhy, enc_dbh, enc_dby, enc_hprev = self.encoder.BPTT([inputs[j]], [first_word_to_ix[targets[j].split(' ')[0]]], enc_hs[len([inputs[j]])-1], xs=enc_xs, hs=enc_hs, ps=enc_ps, loss=enc_loss, forward=False)
+                enc_loss, enc_dWxh, enc_dWhh, enc_dWhy, enc_dbh, enc_dby, enc_hprev = self.encoder.BPTT([inputs[j]], [first_word_to_ix[targets[j].split(' ')[0]]], enc_hs[len([inputs[j]])-1], 'enc', xs=enc_xs, hs=enc_hs, ps=enc_ps, loss=enc_loss, forward=False)
 
                 # minimize the loss for deocder
                 enc_weights_derivatives_mem = zip(
@@ -74,7 +74,7 @@ class encoder_decoder(object):
         X : input sequence
         return output label/sequence
         '''
-        ps, hs = self.encoder.predict(X)
+        ps, hs = self.encoder.predict(X, 'enc')
         ques = ''
         word = ix_to_first_word[ps.tolist().index(max(ps))]
         #print word, " ",
@@ -83,7 +83,7 @@ class encoder_decoder(object):
             #print word, " ",
             ques += word + ' '
             #pdb.set_trace()
-            ps, hs = self.decoder.predict([model[word]], hs)
+            ps, hs = self.decoder.predict([model[word]], 'dec', hs)
             word = ix_to_vocab[ps.tolist().index(max(ps))]
         #print word, "\n"
         ques += word

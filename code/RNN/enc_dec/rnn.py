@@ -50,13 +50,13 @@ class RNN(object):
         # forward pass
         # range creates a list in memory whereas xrange is a sequence object that evaluates lazily
         if forward:
-	    xs, hs, ys, ps = {}, {}, {}, {}
-	    hs[-1] = np.copy(hprev)
-	    loss = 0
+            xs, hs, ys, ps = {}, {}, {}, {}
+            hs[-1] = np.copy(hprev)
+            loss = 0
             for t in xrange(len(X)):
-				if rnn_type == 'dec':
-				    xs[t] = np.reshape(X[t],(self.input_dim,1)) # for word2vec
-				else:
+                if rnn_type == 'dec':
+                    xs[t] = np.reshape(X[t],(self.input_dim,1)) # for word2vec
+                else:
                     xs[t] = np.zeros((self.input_dim, 1))  # encode in 1-of-k representation
                     #pdb.set_trace()
                     xs[t][X[t]] = 1
@@ -88,7 +88,7 @@ class RNN(object):
             return loss, dWxh, dWhh, dWhy, dbh, dby, hs[len(X) - 1]
 
 
-    def predict(self, X, hprev=None):
+    def predict(self, X, rnn_type, hprev=None):
         '''
         Given an input sequence, predict the output
         X : input sequence
@@ -99,7 +99,13 @@ class RNN(object):
         xs, hs, ys, ps = {}, {}, {}, {}
         hs[-1] = np.copy(hprev)
         for t in xrange(len(X)):
-            xs[t] = np.reshape(X[t],(self.input_dim,1)) # encode in 1-of-k representation
+            # uncomment below line for w2v rnn            
+            #xs[t] = np.reshape(X[t],(self.input_dim,1)) # encode in 1-of-k representation
+            if rnn_type == 'enc':
+                xs[t] = np.zeros((self.input_dim,1))
+                xs[t][X[t]] = 1
+            else:
+                xs[t] = np.reshape(X[t],(self.input_dim,1))
             hs[t] = np.tanh(np.dot(self.Wxh, xs[t]) + np.dot(self.Whh, hs[t - 1]) + self.bh)  # hidden state
             ys[t] = np.dot(self.Why, hs[t]) + self.by  # unnormalized log probabilities
             ps[t] = np.exp(ys[t]) / np.sum(np.exp(ys[t]))

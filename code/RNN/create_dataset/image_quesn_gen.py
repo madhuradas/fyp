@@ -1,7 +1,7 @@
 import nltk, pickle
 from matplotlib import colors
 
-data = eval(open("../../flickr30k/tuples_5000.txt").read())
+data = eval(open("../../flickr30k/tuples_1000.txt").read())
 # data = [('clothing', 'striped polo shirt'), ('scene', 'seated position'), ('vehicles', 'three wheeled bikes')]
 ques_list = []
 c = 0
