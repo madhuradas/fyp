@@ -1,0 +1,709 @@
+Class :  shop
+What type of diversion is present in the image ?
+Class :  dance
+What type of diversion is present in the image ?
+Class :  visual property
+What type of diversion is present in the image ?
+Class :  presentation
+What type of diversion is present in the image ?
+Class :  division
+What type of diversion is present in the image ?
+Class :  woman
+What type of diversion is present in the image ?
+Class :  rise
+What type of diversion is present in the image ?
+Class :  artwork
+What type of diversion is present in the image ?
+Class :  geological formation
+What type of diversion is present in the image ?
+Class :  transmission
+What type of diversion is present in the image ?
+Class :  contact sport
+What type of diversion is present in the image ?
+Class :  solid
+What type of diversion is present in the image ?
+Class :  force
+What type of diversion is present in the image ?
+Class :  collage
+What type of diversion is present in the image ?
+Class :  sign
+What type of diversion is present in the image ?
+Class :  basic cognitive process
+What type of diversion is present in the image ?
+Class :  street
+What type of diversion is present in the image ?
+Class :  hunting dog
+What type of diversion is present in the image ?
+Class :  procurator
+What type of diversion is present in the image ?
+Class :  section
+What type of diversion is present in the image ?
+Class :  cooking
+What type of diversion is present in the image ?
+Class :  attire
+What type of group is present in the image ?
+Class :  life science
+What type of diversion is present in the image ?
+Class :  orthopterous insect
+What type of diversion is present in the image ?
+Class :  optical instrument
+What type of diversion is present in the image ?
+Class :  speech act
+What type of diversion is present in the image ?
+Class :  reproductive structure
+What type of diversion is present in the image ?
+Class :  graphic art
+What type of diversion is present in the image ?
+Class :  natural depression
+What type of diversion is present in the image ?
+Class :  path
+What type of diversion is present in the image ?
+Class :  combatant
+What type of diversion is present in the image ?
+Class :  chordophone
+What type of diversion is present in the image ?
+Class :  substance
+What type of diversion is present in the image ?
+Class :  soft-finned fish
+What type of diversion is present in the image ?
+Class :  soldier
+What type of diversion is present in the image ?
+Class :  locomotion
+What type of diversion is present in the image ?
+Class :  climb
+What type of diversion is present in the image ?
+Class :  living thing
+What type of diversion is present in the image ?
+Class :  figure
+What type of diversion is present in the image ?
+Class :  public square
+What type of diversion is present in the image ?
+Class :  visual communication
+What type of diversion is present in the image ?
+Class :  wit
+What type of diversion is present in the image ?
+Class :  motor
+What type of diversion is present in the image ?
+Class :  limb
+What type of diversion is present in the image ?
+Class :  illumination
+What type of diversion is present in the image ?
+Class :  unit
+What type of diversion is present in the image ?
+Class :  plot
+What type of diversion is present in the image ?
+Class :  estate
+What type of diversion is present in the image ?
+Class :  consumption
+What type of diversion is present in the image ?
+Class :  warship
+What type of diversion is present in the image ?
+Class :  woman's clothing
+What type of group is present in the image ?
+Class :  music
+What type of diversion is present in the image ?
+Class :  concave shape
+What type of diversion is present in the image ?
+Class :  chemoreceptor
+What type of diversion is present in the image ?
+Class :  coral reef
+What type of diversion is present in the image ?
+Class :  clue
+What type of diversion is present in the image ?
+Class :  adult
+What type of diversion is present in the image ?
+Class :  disfavor
+What type of diversion is present in the image ?
+Class :  shepherd dog
+What type of diversion is present in the image ?
+Class :  room
+What type of diversion is present in the image ?
+Class :  hour
+What type of diversion is present in the image ?
+Class :  natural elevation
+What type of diversion is present in the image ?
+Class :  car
+What type of diversion is present in the image ?
+Class :  athlete
+What type of diversion is present in the image ?
+Class :  sound property
+What type of diversion is present in the image ?
+Class :  performer
+What type of diversion is present in the image ?
+Class :  sandbank
+What type of diversion is present in the image ?
+Class :  stream
+What type of diversion is present in the image ?
+Class :  working dog
+What type of diversion is present in the image ?
+Class :  airplane
+What type of diversion is present in the image ?
+Class :  clothing
+What type of diversion is present in the image ?
+Class :  ceremony
+What type of diversion is present in the image ?
+Class :  ruminant
+What type of diversion is present in the image ?
+Class :  skirt
+What type of diversion is present in the image ?
+Class :  comfort
+What type of diversion is present in the image ?
+Class :  natural object
+What type of diversion is present in the image ?
+Class :  marital status
+What type of diversion is present in the image ?
+Class :  bird family
+What type of diversion is present in the image ?
+Class :  forest
+What type of diversion is present in the image ?
+Class :  occupational group
+What type of diversion is present in the image ?
+Class :  product
+What type of diversion is present in the image ?
+Class :  rescue equipment
+What type of diversion is present in the image ?
+Class :  farm
+What type of diversion is present in the image ?
+Class :  spot
+What type of diversion is present in the image ?
+Class :  collection
+What type of diversion is present in the image ?
+Class :  headdress
+What type of diversion is present in the image ?
+Class :  sheet metal
+What type of diversion is present in the image ?
+Class :  outline
+What type of diversion is present in the image ?
+Class :  commodity
+What type of diversion is present in the image ?
+Class :  shore
+What type of diversion is present in the image ?
+Class :  deceive
+What type of diversion is present in the image ?
+Class :  representation
+What type of diversion is present in the image ?
+Class :  office
+What type of diversion is present in the image ?
+Class :  city district
+What type of diversion is present in the image ?
+Class :  pointer
+What type of diversion is present in the image ?
+Class :  visual percept
+What type of diversion is present in the image ?
+Class :  dirtiness
+What type of diversion is present in the image ?
+Class :  group
+What type of diversion is present in the image ?
+Class :  production
+What type of diversion is present in the image ?
+Class :  food
+What type of diversion is present in the image ?
+Class :  signboard
+What type of diversion is present in the image ?
+Class :  killer
+What type of diversion is present in the image ?
+Class :  framework
+What type of diversion is present in the image ?
+Class :  consumer goods
+What type of diversion is present in the image ?
+Class :  front
+What type of causal is present in the image ?
+Class :  preschool
+What type of diversion is present in the image ?
+Class :  wagon
+What type of diversion is present in the image ?
+Class :  binary compound
+What type of diversion is present in the image ?
+Class :  musical performance
+What type of diversion is present in the image ?
+Class :  undertaking
+What type of diversion is present in the image ?
+Class :  skilled worker
+What type of diversion is present in the image ?
+Class :  slide
+What type of diversion is present in the image ?
+Class :  rock
+What type of diversion is present in the image ?
+Class :  meal
+What type of diversion is present in the image ?
+Class :  instrumentality
+What type of diversion is present in the image ?
+Class :  turtle
+What type of diversion is present in the image ?
+Class :  garment
+What type of diversion is present in the image ?
+Class :  martial art
+What type of diversion is present in the image ?
+Class :  building complex
+What type of diversion is present in the image ?
+Class :  container
+What type of diversion is present in the image ?
+Class :  alcohol
+What type of diversion is present in the image ?
+Class :  verbal creation
+What type of diversion is present in the image ?
+Class :  noisemaker
+What type of diversion is present in the image ?
+Class :  barrier
+What type of diversion is present in the image ?
+Class :  formation
+What type of diversion is present in the image ?
+Class :  footrace
+What type of diversion is present in the image ?
+Class :  yard
+What type of diversion is present in the image ?
+Class :  equine
+What type of diversion is present in the image ?
+Class :  dead person
+What type of diversion is present in the image ?
+Class :  motion
+What type of diversion is present in the image ?
+Class :  footwear
+What type of diversion is present in the image ?
+Class :  promotion
+What type of diversion is present in the image ?
+Class :  dwelling
+What type of diversion is present in the image ?
+Class :  hoop
+What type of diversion is present in the image ?
+Class :  municipality
+What type of diversion is present in the image ?
+Class :  traveler
+What type of diversion is present in the image ?
+Class :  quality
+What type of diversion is present in the image ?
+Class :  horse
+What type of diversion is present in the image ?
+Class :  plastic art
+What type of diversion is present in the image ?
+Class :  festival
+What type of diversion is present in the image ?
+Class :  prickly pear
+What type of diversion is present in the image ?
+Class :  popular music
+What type of diversion is present in the image ?
+Class :  upper surface
+What type of diversion is present in the image ?
+Class :  season
+What type of diversion is present in the image ?
+Class :  artifact
+What type of diversion is present in the image ?
+Class :  woody plant
+What type of diversion is present in the image ?
+Class :  kabob
+What type of diversion is present in the image ?
+Class :  newlywed
+What type of diversion is present in the image ?
+Class :  enlisted person
+What type of causal is present in the image ?
+Class :  photograph
+What type of diversion is present in the image ?
+Class :  gramineous plant
+What type of diversion is present in the image ?
+Class :  sculpture
+What type of diversion is present in the image ?
+Class :  time period
+What type of diversion is present in the image ?
+Class :  bridge
+What type of diversion is present in the image ?
+Class :  gathering
+What type of causal is present in the image ?
+Class :  runner
+What type of diversion is present in the image ?
+Class :  mammal family
+What type of diversion is present in the image ?
+Class :  external body part
+What type of diversion is present in the image ?
+Class :  mechanism
+What type of diversion is present in the image ?
+Class :  paraprofessional
+What type of diversion is present in the image ?
+Class :  performance
+What type of diversion is present in the image ?
+Class :  vegetation
+What type of diversion is present in the image ?
+Class :  arthropod genus
+What type of diversion is present in the image ?
+Class :  play
+What type of diversion is present in the image ?
+Class :  word picture
+What type of diversion is present in the image ?
+Class :  object
+What type of diversion is present in the image ?
+Class :  mouth
+What type of diversion is present in the image ?
+Class :  tract
+What type of diversion is present in the image ?
+Class :  device
+What type of diversion is present in the image ?
+Class :  partition
+What type of diversion is present in the image ?
+Class :  water sport
+What type of diversion is present in the image ?
+Class :  dog
+What type of diversion is present in the image ?
+Class :  aerosol
+What type of diversion is present in the image ?
+Class :  enterprise
+What type of diversion is present in the image ?
+Class :  grassland
+What type of diversion is present in the image ?
+Class :  musical organization
+What type of diversion is present in the image ?
+Class :  painting
+What type of causal is present in the image ?
+Class :  swimming stroke
+What type of diversion is present in the image ?
+Class :  slope
+What type of diversion is present in the image ?
+Class :  affair
+What type of diversion is present in the image ?
+Class :  atmosphere
+What type of diversion is present in the image ?
+Class :  court game
+What type of diversion is present in the image ?
+Class :  show
+What type of diversion is present in the image ?
+Class :  actinic radiation
+What type of diversion is present in the image ?
+Class :  chicken
+What type of diversion is present in the image ?
+Class :  geological phenomenon
+What type of diversion is present in the image ?
+Class :  completion
+What type of diversion is present in the image ?
+Class :  outbuilding
+What type of diversion is present in the image ?
+Class :  wood
+What type of diversion is present in the image ?
+Class :  dramatic composition
+What type of diversion is present in the image ?
+Class :  conveyer belt
+What type of diversion is present in the image ?
+Class :  place of worship
+What type of diversion is present in the image ?
+Class :  grocery store
+What type of diversion is present in the image ?
+Class :  leisure
+What type of diversion is present in the image ?
+Class :  bar
+What type of diversion is present in the image ?
+Class :  nutriment
+What type of gathering is present in the image ?
+Class :  motorboat
+What type of diversion is present in the image ?
+Class :  body part
+What type of diversion is present in the image ?
+Class :  activity
+What type of diversion is present in the image ?
+Class :  art
+What type of diversion is present in the image ?
+Class :  creator
+What type of diversion is present in the image ?
+Class :  excavation
+What type of diversion is present in the image ?
+Class :  canine
+What type of diversion is present in the image ?
+Class :  facial hair
+What type of diversion is present in the image ?
+Class :  railroad track
+What type of diversion is present in the image ?
+Class :  cattle
+What type of diversion is present in the image ?
+Class :  sport
+What type of diversion is present in the image ?
+Class :  feline
+What type of diversion is present in the image ?
+Class :  small boat
+What type of diversion is present in the image ?
+Class :  commercial enterprise
+What type of diversion is present in the image ?
+Class :  biome
+What type of diversion is present in the image ?
+Class :  guitar
+What type of diversion is present in the image ?
+Class :  linguistic process
+What type of diversion is present in the image ?
+Class :  gallinaceous bird
+What type of group is present in the image ?
+Class :  hypothesis
+What type of diversion is present in the image ?
+Class :  conflagration
+What type of diversion is present in the image ?
+Class :  body of water
+What type of diversion is present in the image ?
+Class :  cur
+What type of diversion is present in the image ?
+Class :  residence
+What type of diversion is present in the image ?
+Class :  region
+What type of diversion is present in the image ?
+Class :  workplace
+What type of diversion is present in the image ?
+Class :  railway
+What type of diversion is present in the image ?
+Class :  bowed stringed instrument
+What type of diversion is present in the image ?
+Class :  supply
+What type of diversion is present in the image ?
+Class :  percussionist
+What type of diversion is present in the image ?
+Class :  community
+What type of causal is present in the image ?
+Class :  walk
+What type of diversion is present in the image ?
+Class :  dancer
+What type of diversion is present in the image ?
+Class :  consideration
+What type of diversion is present in the image ?
+Class :  vessel
+What type of diversion is present in the image ?
+Class :  boat
+What type of diversion is present in the image ?
+Class :  conference
+What type of diversion is present in the image ?
+Class :  cycling
+What type of diversion is present in the image ?
+Class :  football play
+What type of diversion is present in the image ?
+Class :  swimmer
+What type of diversion is present in the image ?
+Class :  vertebrate
+What type of diversion is present in the image ?
+Class :  vacation
+What type of diversion is present in the image ?
+Class :  atmospheric phenomenon
+What type of diversion is present in the image ?
+Class :  basin
+What type of diversion is present in the image ?
+Class :  meeting
+What type of diversion is present in the image ?
+Class :  board
+What type of diversion is present in the image ?
+Class :  life
+What type of diversion is present in the image ?
+Class :  angiosperm
+What type of diversion is present in the image ?
+Class :  keyboard instrument
+What type of diversion is present in the image ?
+Class :  craft
+What type of diversion is present in the image ?
+Class :  child
+What type of diversion is present in the image ?
+Class :  masonry
+What type of diversion is present in the image ?
+Class :  stringed instrument
+What type of diversion is present in the image ?
+Class :  plain
+What type of diversion is present in the image ?
+Class :  percussion instrument
+What type of diversion is present in the image ?
+Class :  conveyance
+What type of diversion is present in the image ?
+Class :  property
+What type of diversion is present in the image ?
+Class :  canoe
+What type of diversion is present in the image ?
+Class :  soil
+What type of diversion is present in the image ?
+Class :  encouragement
+What type of diversion is present in the image ?
+Class :  decoration
+What type of diversion is present in the image ?
+Class :  pictorial representation
+What type of causal is present in the image ?
+Class :  waterway
+What type of diversion is present in the image ?
+Class :  descent
+What type of diversion is present in the image ?
+Class :  fragment
+What type of diversion is present in the image ?
+Class :  speech
+What type of causal is present in the image ?
+Class :  descend
+What type of diversion is present in the image ?
+Class :  facial expression
+What type of diversion is present in the image ?
+Class :  european
+What type of diversion is present in the image ?
+Class :  diversion
+What type of diversion is present in the image ?
+Class :  residential district
+What type of diversion is present in the image ?
+Class :  paving
+What type of diversion is present in the image ?
+Class :  brome
+What type of diversion is present in the image ?
+Class :  chromatic color
+What type of causal is present in the image ?
+Class :  person
+What type of causal is present in the image ?
+Class :  cheer
+What type of diversion is present in the image ?
+Class :  protective covering
+What type of diversion is present in the image ?
+Class :  position
+What type of diversion is present in the image ?
+Class :  drawing
+What type of diversion is present in the image ?
+Class :  outdoor sport
+What type of diversion is present in the image ?
+Class :  old man
+What type of diversion is present in the image ?
+Class :  wheeled vehicle
+What type of diversion is present in the image ?
+Class :  blow
+What type of diversion is present in the image ?
+Class :  point of view
+What type of diversion is present in the image ?
+Class :  spectacles
+What type of diversion is present in the image ?
+Class :  lineman
+What type of diversion is present in the image ?
+Class :  grounder
+What type of diversion is present in the image ?
+Class :  instrument
+What type of diversion is present in the image ?
+Class :  exhibition
+What type of diversion is present in the image ?
+Class :  contestant
+What type of diversion is present in the image ?
+Class :  golf stroke
+What type of diversion is present in the image ?
+Class :  military vehicle
+What type of diversion is present in the image ?
+Class :  government building
+What type of diversion is present in the image ?
+Class :  precipitation
+What type of diversion is present in the image ?
+Class :  chordate
+What type of diversion is present in the image ?
+Class :  ceramic ware
+What type of diversion is present in the image ?
+Class :  channel
+What type of diversion is present in the image ?
+Class :  output
+What type of diversion is present in the image ?
+Class :  tower
+What type of diversion is present in the image ?
+Class :  track and field
+What type of diversion is present in the image ?
+Class :  adversity
+What type of diversion is present in the image ?
+Class :  achromatic color
+What type of diversion is present in the image ?
+Class :  creation
+What type of diversion is present in the image ?
+Class :  hair
+What type of diversion is present in the image ?
+Class :  trouser
+What type of diversion is present in the image ?
+Class :  burial chamber
+What type of diversion is present in the image ?
+Class :  physical phenomenon
+What type of diversion is present in the image ?
+Class :  shrub
+What type of diversion is present in the image ?
+Class :  public transport
+What type of diversion is present in the image ?
+Class :  religion
+What type of diversion is present in the image ?
+Class :  fog
+What type of diversion is present in the image ?
+Class :  movable barrier
+What type of causal is present in the image ?
+Class :  thoroughfare
+What type of diversion is present in the image ?
+Class :  bowling
+What type of diversion is present in the image ?
+Class :  expansion
+What type of diversion is present in the image ?
+Class :  animal skin
+What type of causal is present in the image ?
+Class :  mobilization
+What type of diversion is present in the image ?
+Class :  body covering
+What type of diversion is present in the image ?
+Class :  dinner
+What type of diversion is present in the image ?
+Class :  facility
+What type of diversion is present in the image ?
+Class :  military service
+What type of causal is present in the image ?
+Class :  horizontal surface
+What type of diversion is present in the image ?
+Class :  piciform bird
+What type of diversion is present in the image ?
+Class :  furnishing
+What type of diversion is present in the image ?
+Class :  animal order
+What type of diversion is present in the image ?
+Class :  area
+What type of diversion is present in the image ?
+Class :  structure
+What type of diversion is present in the image ?
+Class :  way
+What type of diversion is present in the image ?
+Class :  house
+What type of diversion is present in the image ?
+Class :  valley
+What type of diversion is present in the image ?
+Class :  auditory communication
+What type of diversion is present in the image ?
+Class :  fire iron
+What type of diversion is present in the image ?
+Class :  line
+What type of diversion is present in the image ?
+Class :  buying
+What type of diversion is present in the image ?
+Class :  water travel
+What type of diversion is present in the image ?
+Class :  extremity
+What type of diversion is present in the image ?
+Class :  motor vehicle
+What type of gathering is present in the image ?
+Class :  plant material
+What type of diversion is present in the image ?
+Class :  skating
+What type of diversion is present in the image ?
+Class :  juvenile
+What type of diversion is present in the image ?
+Class :  ball game
+What type of diversion is present in the image ?
+Class :  linear unit
+What type of diversion is present in the image ?
+Class :  education
+What type of diversion is present in the image ?
+Class :  objection
+What type of diversion is present in the image ?
+Class :  field
+What type of diversion is present in the image ?
+Class :  other
+What type of diversion is present in the image ?
+Class :  branch
+What type of diversion is present in the image ?
+Class :  musician
+What type of diversion is present in the image ?
+Class :  shelter
+What type of diversion is present in the image ?
+Class :  helping
+What type of diversion is present in the image ?
+Class :  male horse
+What type of diversion is present in the image ?
+Class :  causal agent
+What type of diversion is present in the image ?
+Class :  pool
+What type of diversion is present in the image ?
+Class :  building
+What type of diversion is present in the image ?
+Class :  land
+What type of diversion is present in the image ?
+Class :  happening
+What type of diversion is present in the image ?
+Class :  curve
+What type of diversion is present in the image ?
+Class :  beverage
+What type of diversion is present in the image ?
+Class :  building material
+What type of diversion is present in the image ?
+Accuracy :  0.282485875706
