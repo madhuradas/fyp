@@ -15,14 +15,14 @@ def test(model_file):
     # del classes[classes.index('people')]
     obj = eval(open("../create_dataset/objects.txt").read())
     c = 0
-    for i in range(len(classes)):
-        print 'Class : ', classes[i] #eval(open('ques.txt').read()).values()[500]
-        print 'Object : ', obj[i]
-        ques = enc_dec.predict_question([class_obj_to_ix[classes[i]]], ix_to_first_word, ix_to_vocab, model_q)
+    for i in range(len(classes)-1):
+        print 'Class : ', classes[i], classes[i+1] #eval(open('ques.txt').read()).values()[500]
+        print 'Object : ', obj[i], obj[i+1]
+        ques = enc_dec.predict_question([class_obj_to_ix[classes[k]] for k in range(i,i+2) ], ix_to_first_word, ix_to_vocab, model_q)
         print ques
         #time.sleep(2)
         #pdb.set_trace()
-        if classes[i] == 'clothing' and ques == 'What is the person in the image wearing ?':
+        if classes[i] == 'clothing' and 'What is the person in the image wearing' in ques:
             c += 1
         elif classes[i] in ques.split(' '):
             c += 1

@@ -30,8 +30,7 @@ open("objects.txt","w").write(str(obj))
 
 questions = initial_questions
 
-model_q = Word2Vec([q.split(" ") for q in questions], size=30, window=1, min_count=1, workers=4)
-pickle.dump(model_q, open("../../../data/questions.pickle",'wb'))
+
 
 model_cls = Word2Vec([[i] for i in classes_obj] , size=30, window=1, min_count=1, workers=4)
 pickle.dump(model_cls, open("../../../data/classes_obj.pickle",'wb'))
@@ -48,8 +47,8 @@ first_words = set()
 class_obj = set()
 
 for c in classes_obj:
-	class_obj.add(c)
-	
+    class_obj.add(c)
+    
 for q in questions:
     for i in q.split(' '):
         ques_vocab.add(i)
@@ -62,16 +61,28 @@ ix_to_vocab = {i: w for i, w in enumerate(ques_vocab)}
 ix_to_class_obj = {i: c for i, c in enumerate(class_obj)}
 class_obj_to_ix = {c: i for i, c in enumerate(class_obj)}
 
-for tup in d:
-    if tup[-1] == 1:
+for i in range(len(d)-1):
+    if d[i][-1] == 1:
         # send class
         # inputs.append(model_cls[tup[0]])
-		inputs.append(class_obj_to_ix[tup[0]])
+        temp = []
+        temp.append(class_obj_to_ix[d[i][0]])
+        j = i
+        while d[j][0] == d[i][0] and j < len(d)-2:
+            j += 1
+        temp.append(class_obj_to_ix[d[j][0]])
+        inputs.append(temp)
     else:
         # send obj
         # inputs.append(model_cls[tup[2]])
-		inputs.append(class_obj_to_ix[tup[2]])
-    targets.append(tup[1])
+        temp = []
+        temp.append(class_obj_to_ix[d[i][2]])
+        j = i
+        while d[j+1][2] == d[i][2] and j < len(d)-2:
+            j += 1
+        temp.append(class_obj_to_ix[d[j][2]])
+        inputs.append(temp)
+    targets.append(d[i][1].replace(' ?','') + ' and ' + d[j][1])
 
 pickle.dump(inputs, open('../../../data/enc_dec_inputs.pickle', 'wb'))
 pickle.dump(targets, open('../../../data/enc_dec_targets.pickle', 'wb'))
@@ -81,3 +92,6 @@ pickle.dump(vocab_to_ix, open('../../../data/vocab_to_ix.pickle', 'wb'))
 pickle.dump(first_word_to_ix, open('../../../data/first_word_to_ix.pickle', 'wb'))
 pickle.dump(ix_to_class_obj, open('../../../data/ix_to_class_obj.pickle', 'wb'))
 pickle.dump(class_obj_to_ix, open('../../../data/class_obj_to_ix.pickle', 'wb'))
+
+model_q = Word2Vec([q.split(" ") for q in targets], size=30, window=1, min_count=1, workers=4)
+pickle.dump(model_q, open("../../../data/questions.pickle",'wb'))

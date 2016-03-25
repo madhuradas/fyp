@@ -53,6 +53,7 @@ class RNN(object):
             xs, hs, ys, ps = {}, {}, {}, {}
             hs[-1] = np.copy(hprev)
             loss = 0
+#            pdb.set_trace()
             for t in xrange(len(X)):
                 if rnn_type == 'dec':
                     xs[t] = np.reshape(X[t],(self.input_dim,1)) # for word2vec
@@ -63,7 +64,7 @@ class RNN(object):
                 hs[t] = np.tanh(np.dot(self.Wxh, xs[t]) + np.dot(self.Whh, hs[t - 1]) + self.bh)  # hidden state
                 ys[t] = np.dot(self.Why, hs[t]) + self.by  # unnormalized log probabilities for next chars
                 ps[t] = np.exp(ys[t]) / np.sum(np.exp(ys[t]))  # probabilities for next chars
-                loss += -np.log(ps[t][y[t], 0])  # softmax (cross-entropy loss)
+                loss += -np.log(ps[t][y[0], 0])  # softmax (cross-entropy loss), changed from y[t] -> y[0]
                 #loss += -np.log(ps[t][ind, 0]) # changed from char - rnn, ix_to_char used by karparthy
             return xs, hs, ps, loss
         else:
@@ -98,6 +99,7 @@ class RNN(object):
             hprev = np.zeros((self.hidden_size, 1))
         xs, hs, ys, ps = {}, {}, {}, {}
         hs[-1] = np.copy(hprev)
+        
         for t in xrange(len(X)):
             # uncomment below line for w2v rnn            
             #xs[t] = np.reshape(X[t],(self.input_dim,1)) # encode in 1-of-k representation

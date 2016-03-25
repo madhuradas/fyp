@@ -36,7 +36,7 @@ class encoder_decoder(object):
             hprev = np.zeros((self.encoder.hidden_size, 1))  # reset RNN memory every epoch
             for j in xrange(len(inputs)):
                 # Encoder forward pass
-                enc_xs, enc_hs, enc_ps, enc_loss = self.encoder.BPTT([inputs[j]], [first_word_to_ix[targets[j].split(' ')[0]]], hprev, 'enc', xs=None, hs=None, ps=None, loss=None, forward=True)
+                enc_xs, enc_hs, enc_ps, enc_loss = self.encoder.BPTT(inputs[j], [first_word_to_ix[targets[j].split(' ')[0]]], hprev, 'enc', xs=None, hs=None, ps=None, loss=None, forward=True)
                 # smooth_loss = smooth_loss * 0.999 + loss * 0.001
 
                 # Decoder Forward pass
@@ -57,7 +57,7 @@ class encoder_decoder(object):
                 print 'epoch %d, DECODER loss: %f' % (i, dec_smooth_loss)  # print progress
 
                 # Encoder Back pass
-                enc_loss, enc_dWxh, enc_dWhh, enc_dWhy, enc_dbh, enc_dby, enc_hprev = self.encoder.BPTT([inputs[j]], [first_word_to_ix[targets[j].split(' ')[0]]], enc_hs[len([inputs[j]])-1], 'enc', xs=enc_xs, hs=enc_hs, ps=enc_ps, loss=enc_loss, forward=False)
+                enc_loss, enc_dWxh, enc_dWhh, enc_dWhy, enc_dbh, enc_dby, enc_hprev = self.encoder.BPTT(inputs[j], [first_word_to_ix[targets[j].split(' ')[0]]], enc_hs[len([inputs[j]])-1], 'enc', xs=enc_xs, hs=enc_hs, ps=enc_ps, loss=enc_loss, forward=False)
 
                 # minimize the loss for deocder
                 enc_weights_derivatives_mem = zip(
